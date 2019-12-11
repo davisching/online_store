@@ -18,4 +18,13 @@
       <module name="ols_pojo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ols-api" options="-parameters" />
+      <module name="ols-common" options="-parameters" />
+      <module name="ols-mapper" options="-parameters" />
+      <module name="ols-pojo" options="-parameters" />
+      <module name="ols-service" options="-parameters" />
+    </option>
+  </component>
 </project>

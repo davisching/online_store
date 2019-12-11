@@ -8,6 +8,14 @@
     <artifactId>online_store</artifactId>
     <version>0.0.1</version>
 
+    <modules>
+        <module>ols-common</module>
+        <module>ols-pojo</module>
+        <module>ols-mapper</module>
+        <module>ols-service</module>
+        <module>ols-api</module>
+    </modules>
+
     <packaging>pom</packaging>
 
 </project>

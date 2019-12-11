@@ -1,4 +1,4 @@
-package pers.dc.controller;
+package pers.dc.ols.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

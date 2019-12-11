@@ -7,19 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ols-service" />
-        <module name="ols-common" />
-        <module name="ols-pojo" />
         <module name="ols-mapper" />
+        <module name="ols-pojo" />
+        <module name="ols-common" />
         <module name="ols-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mybatis_generator_for_ols" target="13" />
       <module name="ols_common" target="1.5" />
       <module name="ols_pojo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mybatis_generator_for_ols" options="-parameters" />
       <module name="ols-api" options="-parameters" />
       <module name="ols-common" options="-parameters" />
       <module name="ols-mapper" options="-parameters" />

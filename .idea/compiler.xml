@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ols-service" />
+        <module name="ols-common" />
         <module name="ols-mapper" />
         <module name="ols-pojo" />
-        <module name="ols-common" />
         <module name="ols-api" />
       </profile>
     </annotationProcessing>

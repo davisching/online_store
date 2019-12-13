@@ -23,6 +23,7 @@
                 connectionURL="jdbc:mysql://localhost:3306/ols"
                 userId="root"
                 password="Aa941211">
+            <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -43,10 +44,37 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="test" domainObjectName="Test"
-               enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
-        </table>
+<!--        <table tableName="test" domainObjectName="Test"-->
+<!--               enableCountByExample="false"-->
+<!--               enableUpdateByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+<!--        | carousel         |-->
+<!--        | category         |-->
+<!--        | items            |-->
+<!--        | items_comments   |-->
+<!--        | items_img        |-->
+<!--        | items_param      |-->
+<!--        | items_spec       |-->
+<!--        | order_items      |-->
+<!--        | order_status     |-->
+<!--        | orders           |-->
+<!--        | user_address     |-->
+<!--        | users-->
+
+        <table tableName="carousel" domainObjectName="Carousel"/>
+        <table tableName="category" domainObjectName="Category"/>
+        <table tableName="items" domainObjectName="Item"/>
+        <table tableName="items_comments" domainObjectName="ItemComment"/>
+        <table tableName="items_img" domainObjectName="ItemImg"/>
+        <table tableName="items_param" domainObjectName="ItemParam"/>
+        <table tableName="items_spec" domainObjectName="ItemSpec"/>
+        <table tableName="order_items" domainObjectName="OrderItem"/>
+        <table tableName="order_status" domainObjectName="OrderStatus"/>
+        <table tableName="orders" domainObjectName="Order"/>
+        <table tableName="user_address" domainObjectName="UserAddress"/>
+        <table tableName="users" domainObjectName="User"/>
+
     </context>
 </generatorConfiguration>

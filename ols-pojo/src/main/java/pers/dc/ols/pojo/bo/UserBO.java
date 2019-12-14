@@ -1,10 +1,20 @@
 package pers.dc.ols.pojo.bo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import pers.dc.ols.pojo.User;
 
+@ApiModel(value = "「用户创建」业务对象", description = "用于用户创建功能的业务对象")
 public class UserBO {
 
-    private String username, password, confirmPassword;
+    @ApiModelProperty("用户名")
+    private String username;
+
+    @ApiModelProperty("密码")
+    private String password;
+
+    @ApiModelProperty("再次输入密码")
+    private String confirmPassword;
 
     public String getUsername() {
         return username;

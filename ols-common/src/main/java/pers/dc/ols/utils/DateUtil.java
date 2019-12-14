@@ -50,7 +50,7 @@ public class DateUtil {
     }
 
     /**
-     * Returns the Date from a julian. The Julian date will be converted to noon GMT,
+     * Returns the Date from a julian. The Julian date will be converted to noon GMT+8,
      * such that it matches the nearest half-integer (i.e., a julian date of 1.4 gets
      * changed to 1.5, and 0.9 gets changed to 0.5.)
      *
@@ -180,7 +180,7 @@ public class DateUtil {
 
         try {
             Calendar cal = GregorianCalendar.getInstance(TimeZone.getTimeZone(
-                    "GMT"));
+                    "GMT+8"));
             cal.setTime(stringToDate(isoString, fmt, true));
             cal.add(field, amount);
 
@@ -205,7 +205,7 @@ public class DateUtil {
                                     boolean up) throws ParseException {
 
         Calendar cal = GregorianCalendar.getInstance(TimeZone.getTimeZone(
-                "GMT"));
+                "GMT+8"));
         cal.setTime(stringToDate(isoString, fmt));
         cal.roll(field, up);
 
@@ -379,7 +379,7 @@ public class DateUtil {
     public static Date dateIncreaseByDay(Date date, int days) {
 
         Calendar cal = GregorianCalendar.getInstance(TimeZone.getTimeZone(
-                "GMT"));
+                "GMT+8"));
         cal.setTime(date);
         cal.add(Calendar.DATE, days);
 
@@ -395,7 +395,7 @@ public class DateUtil {
     public static Date dateIncreaseByMonth(Date date, int mnt) {
 
         Calendar cal = GregorianCalendar.getInstance(TimeZone.getTimeZone(
-                "GMT"));
+                "GMT+8"));
         cal.setTime(date);
         cal.add(Calendar.MONTH, mnt);
 
@@ -411,7 +411,7 @@ public class DateUtil {
     public static Date dateIncreaseByYear(Date date, int mnt) {
 
         Calendar cal = GregorianCalendar.getInstance(TimeZone.getTimeZone(
-                "GMT"));
+                "GMT+8"));
         cal.setTime(date);
         cal.add(Calendar.YEAR, mnt);
 
@@ -647,8 +647,10 @@ public class DateUtil {
 	{
 //    	String timeDir=DateUtil.dateToString(new Date(),DateUtil.ISO_EXPANDED_DATE_FORMAT);
 //		System.out.println(timeDir);
-    	boolean flag = DateUtil.isValidDate("1990-10-32", DateUtil.ISO_EXPANDED_DATE_FORMAT);
-    	System.out.println(flag);
+//    	boolean flag = DateUtil.isValidDate("1990-10-32", DateUtil.ISO_EXPANDED_DATE_FORMAT);
+//    	System.out.println(flag);
+
+        System.out.println(stringToDate("1970-01-01"));
 	}
     
 }

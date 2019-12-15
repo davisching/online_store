@@ -1,0 +1,80 @@
+2019-12-15 20:25:04.432 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1934 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 20:25:04.442 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 20:25:06.121 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:25:06.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 20:25:06.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 20:25:06.222 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 20:25:07.169 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 20:25:07.573 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 20:25:07.590 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 20:25:07.623 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 20:25:07.961 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:25:08.003 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.1 seconds (JVM running for 6.477)
+2019-12-15 20:25:52.638 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 20:26:04.190 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-15 20:26:04.600 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-15 20:26:09.955 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 20:27:54.831 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-15 20:27:54.848 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-15 20:28:01.915 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1957 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 20:28:01.920 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 20:28:04.876 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:28:04.877 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 20:28:04.878 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 20:28:05.000 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 20:28:05.979 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 20:28:06.353 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 20:28:06.372 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 20:28:06.402 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 20:28:06.575 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:28:06.635 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.134 seconds (JVM running for 7.049)
+2019-12-15 20:28:20.572 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 20:28:20.807 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-15 20:28:21.203 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-15 20:28:21.293 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 20:36:01.288 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-15 20:36:01.302 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-15 20:36:12.585 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1986 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 20:36:12.602 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 20:36:14.520 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:36:14.521 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 20:36:14.522 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 20:36:14.608 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 20:36:15.520 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 20:36:15.863 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 20:36:15.880 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 20:36:15.912 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 20:36:16.137 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:36:16.192 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.088 seconds (JVM running for 5.755)
+2019-12-15 20:36:43.491 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 20:36:43.524 [INFO ] pers.dc.ols.controller.HelloController.hello[21 line] - 测试日志
+2019-12-15 20:37:02.416 [INFO ] pers.dc.ols.controller.HelloController.hello[21 line] - 测试日志
+2019-12-15 20:39:20.763 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2001 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 20:39:20.773 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 20:39:22.931 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:39:22.932 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 20:39:22.933 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 20:39:23.066 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 20:39:25.238 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 20:39:25.572 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 20:39:25.589 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 20:39:25.620 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 20:39:25.800 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:39:25.903 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 6.15 seconds (JVM running for 8.944)
+2019-12-15 20:39:48.249 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2008 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 20:39:48.260 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 20:39:50.047 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:39:50.048 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 20:39:50.049 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 20:39:50.132 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 20:39:50.990 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 20:39:51.270 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 20:39:51.284 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 20:39:51.311 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 20:39:51.462 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 20:39:51.493 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 3.643 seconds (JVM running for 5.417)
+2019-12-15 20:40:05.010 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 20:40:05.036 [INFO ] pers.dc.ols.controller.HelloController.hello[20 line] - 测试日志
+2019-12-15 20:40:25.593 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-15 20:40:25.973 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-15 20:40:26.020 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========

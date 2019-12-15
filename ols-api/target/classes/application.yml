@@ -41,3 +41,6 @@ spring:
 mybatis:
   type-aliases-package: pers.dc.ols.pojo
   mapper-locations: classpath:mapper/*.xml
+
+logging:
+  config: classpath:log4j2.xml

@@ -39,7 +39,7 @@ public class PassportController {
 
     @ApiOperation(value = "用户注册", notes = "用于用户注册")
     @PostMapping("/register")
-    public JSONResult register(@RequestBody UserBO userBO) {
+    public JSONResult register(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
 
         String username = userBO.getUsername();
         String password = userBO.getPassword();
@@ -57,7 +57,9 @@ public class PassportController {
         if (!password.equals(confirmPassword))
             return JSONResult.errorMsg("两次密码不相同！");
 
-        userService.createUser(userBO);
+        User user = userService.createUser(userBO);
+
+        CookieUtils.setCookie(request, response, "user", JsonUtils.objectToJson(user), true);
 
         return JSONResult.ok();
     }

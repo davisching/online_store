@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
         user.setCreatedTime(new Date());
         user.setUpdatedTime(new Date());
         userMapper.insert(user);
-        return user;
+        return setParamNull(user);
     }
 
     @Override

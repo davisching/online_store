@@ -24,4 +24,12 @@ public class UserServiceTest {
         System.out.println(userService.createUser(userBO));
     }
 
+    @Test
+    public void userLoginTest() {
+        UserBO userBO = new UserBO();
+        userBO.setUsername("davisching");
+        userBO.setPassword("Aa941211");
+        System.out.println(userService.userLogin(userBO));
+    }
+
 }

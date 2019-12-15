@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import pers.dc.ols.pojo.User;
 import pers.dc.ols.pojo.bo.UserBO;
 import pers.dc.ols.service.UserService;
 import pers.dc.ols.utils.JSONResult;
@@ -55,5 +56,19 @@ public class PassportController {
         userService.createUser(userBO);
 
         return JSONResult.ok();
+    }
+
+    @ApiOperation(value = "用户登录")
+    @PostMapping("/login")
+    public JSONResult login(@RequestBody UserBO userBO) {
+        String username = userBO.getUsername();
+        String password = userBO.getPassword();
+
+        if (StringUtils.isBlank(username) || StringUtils.isBlank(password))
+            return JSONResult.errorMsg("用户名或密码不能为空！");
+
+        return userService.userLogin(userBO) != null
+                ? JSONResult.ok()
+                : JSONResult.errorMsg("用户名或密码错误");
     }
 }

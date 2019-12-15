@@ -14,6 +14,7 @@ import pers.dc.ols.utils.MD5Utils;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -41,7 +42,7 @@ public class UserServiceImpl implements UserService {
         User user = new User();
         user.setId(sid.nextShort());
         user.setUsername(userBO.getUsername());
-        user.setPassword(MD5Utils.encrypt(userBO.getPassword()));
+        user.setPassword(MD5Utils.doCrypt(userBO.getPassword()));
         user.setNickname(userBO.getUsername());
         user.setFace(USER_AVATAR);
         user.setBirthday(DateUtil.stringToDate("1970-01-01"));
@@ -50,5 +51,16 @@ public class UserServiceImpl implements UserService {
         user.setUpdatedTime(new Date());
         userMapper.insert(user);
         return user;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public User userLogin(UserBO userBO) {
+        UserExample userExample = new UserExample();
+        UserExample.Criteria criteria = userExample.createCriteria();
+        criteria.andUsernameEqualTo(userBO.getUsername());
+        criteria.andPasswordEqualTo(MD5Utils.doCrypt(userBO.getPassword()));
+        List<User> results = userMapper.selectByExample(userExample);
+        return results.size() == 1 ? results.get(0) : null;
     }
 }

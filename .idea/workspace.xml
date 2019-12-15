@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaa478bb-3922-4528-8ea6-dff609cc5e05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/config/CORSConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ols-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ols-api/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/config/CORSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/config/CORSConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-api/src/test/java/pers/dc/ols/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/src/test/java/pers/dc/ols/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-api/target/classes/pers/dc/ols/controller/PassportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/target/classes/pers/dc/ols/controller/PassportController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-common/src/main/java/pers/dc/ols/utils/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-common/src/main/java/pers/dc/ols/utils/MD5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,22 +133,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTest.create2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ols-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.dc.ols.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pers.dc.ols" />
-      <option name="MAIN_CLASS_NAME" value="pers.dc.ols.TestTest" />
-      <option name="METHOD_NAME" value="create2Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.createUserTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ols-api" />
       <extension name="coverage">
@@ -176,6 +165,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.userLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ols-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.dc.ols.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pers.dc.ols.service" />
+      <option name="MAIN_CLASS_NAME" value="pers.dc.ols.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="userLoginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ols-api" />
       <extension name="coverage">
@@ -192,10 +197,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.UserServiceTest.userLoginTest" />
         <item itemvalue="Application.DateUtil" />
         <item itemvalue="JUnit.UserServiceTest.createUserTest (1)" />
         <item itemvalue="JUnit.UserServiceTest.createUserTest" />
-        <item itemvalue="JUnit.TestTest.create2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +233,8 @@
       <workItem from="1576300398553" duration="6012000" />
       <workItem from="1576309072352" duration="168000" />
       <workItem from="1576324872925" duration="1323000" />
-      <workItem from="1576331068289" duration="2160000" />
+      <workItem from="1576331068289" duration="2841000" />
+      <workItem from="1576399300956" duration="2521000" />
     </task>
     <servers />
   </component>
@@ -255,10 +261,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="573" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576062422285" />
-    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1576239025512">
+    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1576400523115">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576239025512" />
+    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576400523115" />
     <state x="436" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576150487195">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -275,46 +281,46 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1576225530516" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1576333520559">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1576402026616">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008388" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576402026616" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1576402026614">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008386" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1576402026614" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1576402026613">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008385" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1576402026613" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1576402026615">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008387" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1576402026615" />
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1576402008393">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520559" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576315083537" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1576333520557">
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008393" />
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576399139361" />
+    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1576402008390">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520557" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1576315083535" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1576333520555">
+    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008390" />
+    <state width="1638" height="295" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1576399139359" />
+    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1576402008389">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520555" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1576315083534" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1576333520558">
+    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008389" />
+    <state width="1638" height="295" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1576399139357" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1576402008392">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520558" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1576315083536" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1576333520564">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520564" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576315083539" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1576333520562">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520562" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1576315083538" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1576333520561">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520561" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1576315083537" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1576333520563">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576333520563" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1576315083538" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576402008392" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1576399139360" />
     <state x="378" y="188" key="Maven.ArtifactSearchDialog" timestamp="1576239554677">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

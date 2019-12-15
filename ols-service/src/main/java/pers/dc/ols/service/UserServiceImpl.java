@@ -61,6 +61,18 @@ public class UserServiceImpl implements UserService {
         criteria.andUsernameEqualTo(userBO.getUsername());
         criteria.andPasswordEqualTo(MD5Utils.doCrypt(userBO.getPassword()));
         List<User> results = userMapper.selectByExample(userExample);
-        return results.size() == 1 ? results.get(0) : null;
+        if (results.size() != 1) return null;
+        return setParamNull(results.get(0));
+    }
+
+    private User setParamNull(User user) {
+        user.setPassword(null);
+        user.setMobile(null);
+        user.setEmail(null);
+        user.setCreatedTime(null);
+        user.setUpdatedTime(null);
+        user.setRealname(null);
+        user.setRealname(null);
+        return user;
     }
 }

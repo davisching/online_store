@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import pers.dc.ols.pojo.User;
 import pers.dc.ols.pojo.bo.UserBO;
 import pers.dc.ols.service.UserService;
+import pers.dc.ols.utils.CookieUtils;
 import pers.dc.ols.utils.JSONResult;
+import pers.dc.ols.utils.JsonUtils;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Api(value = "注册登录", tags = {"「注册登录」相关接口"})
 @RestController
@@ -60,15 +64,20 @@ public class PassportController {
 
     @ApiOperation(value = "用户登录")
     @PostMapping("/login")
-    public JSONResult login(@RequestBody UserBO userBO) {
+    public JSONResult login(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {
         String username = userBO.getUsername();
         String password = userBO.getPassword();
 
         if (StringUtils.isBlank(username) || StringUtils.isBlank(password))
             return JSONResult.errorMsg("用户名或密码不能为空！");
 
-        return userService.userLogin(userBO) != null
-                ? JSONResult.ok()
-                : JSONResult.errorMsg("用户名或密码错误");
+        User user = userService.userLogin(userBO);
+
+        if (user == null)
+            return JSONResult.errorMsg("用户名或密码错误");
+
+        CookieUtils.setCookie(request, response, "user", JsonUtils.objectToJson(user), true);
+
+        return JSONResult.ok();
     }
 }

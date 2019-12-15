@@ -78,3 +78,61 @@
 2019-12-15 20:40:25.593 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
 2019-12-15 20:40:25.973 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
 2019-12-15 20:40:26.020 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 20:49:01.422 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-15 20:49:01.448 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-15 21:22:35.366 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2280 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 21:22:35.390 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 21:22:37.483 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 21:22:37.485 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 21:22:37.485 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 21:22:37.580 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 21:22:38.625 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 21:22:39.094 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 21:22:39.114 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 21:22:39.142 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 21:22:39.305 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 21:22:39.341 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.544 seconds (JVM running for 6.418)
+2019-12-15 21:22:49.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 21:23:17.662 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务开始 ========
+2019-12-15 21:23:17.752 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-15 21:23:18.192 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-15 21:23:18.228 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务结束，用时 562 毫秒 ========
+2019-12-15 21:24:38.136 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务开始 ========
+2019-12-15 21:24:38.153 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务结束，用时 14 毫秒 ========
+2019-12-15 21:24:38.164 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 21:26:23.167 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-15 21:26:23.176 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-15 21:26:35.006 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2298 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-15 21:26:35.025 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-15 21:26:37.245 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-15 21:26:37.247 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-15 21:26:37.248 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-15 21:26:37.349 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-15 21:26:38.385 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-15 21:26:38.825 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-15 21:26:38.842 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-15 21:26:38.870 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-15 21:26:39.022 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-15 21:26:39.065 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.508 seconds (JVM running for 6.388)
+2019-12-15 21:26:48.353 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 21:27:02.704 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
+2019-12-15 21:27:02.778 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-15 21:27:03.211 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-15 21:27:03.254 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 546 毫秒 ======
+2019-12-15 21:27:20.179 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】开始 ======
+2019-12-15 21:27:20.195 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】结束，用时 15 毫秒 ======
+2019-12-15 21:27:20.205 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 21:27:37.144 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】开始 ======
+2019-12-15 21:27:37.150 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】结束，用时 6 毫秒 ======
+2019-12-15 21:27:37.151 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-15 21:27:46.150 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
+2019-12-15 21:27:46.158 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 7 毫秒 ======
+2019-12-15 21:27:53.483 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
+2019-12-15 21:27:53.492 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 9 毫秒 ======
+2019-12-15 21:28:05.789 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
+2019-12-15 21:28:05.799 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 9 毫秒 ======
+2019-12-15 21:28:17.561 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
+2019-12-15 21:28:17.570 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 7 毫秒 ======
+2019-12-15 21:28:17.574 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 createUser】开始 ======
+2019-12-15 21:28:17.594 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 createUser】结束，用时 19 毫秒 ======
+2019-12-15 21:28:17.606 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========

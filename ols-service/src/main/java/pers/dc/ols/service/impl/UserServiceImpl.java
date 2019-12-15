@@ -1,4 +1,4 @@
-package pers.dc.ols.service;
+package pers.dc.ols.service.impl;
 
 import org.n3r.idworker.Sid;
 import org.springframework.stereotype.Service;
@@ -9,6 +9,7 @@ import pers.dc.ols.mapper.UserMapper;
 import pers.dc.ols.pojo.User;
 import pers.dc.ols.pojo.UserExample;
 import pers.dc.ols.pojo.bo.UserBO;
+import pers.dc.ols.service.UserService;
 import pers.dc.ols.utils.DateUtil;
 import pers.dc.ols.utils.MD5Utils;
 

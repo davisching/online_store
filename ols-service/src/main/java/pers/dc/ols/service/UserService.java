@@ -7,4 +7,5 @@ public interface UserService {
     boolean checkIfUsernameExisted(String username);
     User createUser(UserBO userBO);
     User userLogin(UserBO userBO);
+
 }

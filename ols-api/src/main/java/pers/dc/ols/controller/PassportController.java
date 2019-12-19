@@ -82,4 +82,11 @@ public class PassportController {
 
         return JSONResult.ok();
     }
+
+    @ApiOperation("用户登出")
+    @PostMapping("/logout")
+    public JSONResult logout(@RequestParam String userId, HttpServletRequest request, HttpServletResponse response) {
+        CookieUtils.deleteCookie(request, response,"user");
+        return JSONResult.ok();
+    }
 }

@@ -1,650 +1,84 @@
-2019-12-15 20:25:04.432 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1934 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 20:25:04.442 [DEBUG] org.springframework.boot.StartupInfoLogger.logStarting[56 line] - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
-2019-12-15 20:25:04.442 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 20:25:05.559 [DEBUG] org.apache.ibatis.logging.LogFactory.setImplementation[105 line] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2019-12-15 20:25:06.121 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:25:06.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 20:25:06.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 20:25:06.222 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 20:25:06.290 [DEBUG] org.n3r.idworker.IdWorker.<init>[30 line] - worker starting. timestamp left shift 21, worker id 0
-2019-12-15 20:25:06.356 [DEBUG] com.zaxxer.hikari.HikariConfig.attemptFromContextLoader[900 line] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
-2019-12-15 20:25:07.166 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[54 line] - initialising the handler methods
-2019-12-15 20:25:07.169 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 20:25:07.190 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:25:07.190 [DEBUG] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory[89 line] - Loaded expression factory via original TCCL
-2019-12-15 20:25:07.193 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:25:07.193 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.messageInterpolator[148 line] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-2019-12-15 20:25:07.194 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.constraintValidatorFactory[180 line] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-2019-12-15 20:25:07.194 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.parameterNameProvider[194 line] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
-2019-12-15 20:25:07.195 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[120 line] - Trying to load META-INF/validation.xml for XML based Validator configuration.
-2019-12-15 20:25:07.196 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[53 line] - Trying to load META-INF/validation.xml via user class loader
-2019-12-15 20:25:07.196 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[60 line] - Trying to load META-INF/validation.xml via TCCL
-2019-12-15 20:25:07.196 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[66 line] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-2019-12-15 20:25:07.197 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[127 line] - No META-INF/validation.xml found. Using annotation based configuration only.
-2019-12-15 20:25:07.203 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[578 line] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-2019-12-15 20:25:07.203 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[579 line] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-2019-12-15 20:25:07.203 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[580 line] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-2019-12-15 20:25:07.204 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[581 line] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-2019-12-15 20:25:07.204 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[582 line] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-2019-12-15 20:25:07.573 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 20:25:07.590 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 20:25:07.605 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[50 line] - Total number of request handlers 9
-2019-12-15 20:25:07.605 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.606 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.607 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
-2019-12-15 20:25:07.607 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/check-availability], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/check-availability], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.607 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/login], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/login], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.607 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/register], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/register], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.607 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.608 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.608 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:25:07.622 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[58 line] - Combined number of request handlers 9
-2019-12-15 20:25:07.623 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 20:25:07.648 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:25:07.649 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:25:07.650 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:25:07.651 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |login|
-2019-12-15 20:25:07.663 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:25:07.690 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property username
-2019-12-15 20:25:07.696 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:25:07.698 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'username' renamed to 'username'
-2019-12-15 20:25:07.698 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property username to model
-2019-12-15 20:25:07.699 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:25:07.700 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:25:07.700 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:25:07.703 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:25:07.712 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property password
-2019-12-15 20:25:07.719 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:25:07.720 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'password' renamed to 'password'
-2019-12-15 20:25:07.720 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property password to model
-2019-12-15 20:25:07.721 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:25:07.721 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:25:07.722 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:25:07.722 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:25:07.725 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property confirmPassword
-2019-12-15 20:25:07.725 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:25:07.726 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'confirmPassword' renamed to 'confirmPassword'
-2019-12-15 20:25:07.726 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property confirmPassword to model
-2019-12-15 20:25:07.726 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:25:07.727 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:25:07.727 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:25:07.727 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:25:07.738 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found confirmPassword, password, username
-2019-12-15 20:25:07.741 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:25:07.742 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key 「用户创建」业务对象
-2019-12-15 20:25:07.748 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property status
-2019-12-15 20:25:07.749 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:25:07.749 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'status' renamed to 'status'
-2019-12-15 20:25:07.750 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property status to model
-2019-12-15 20:25:07.751 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:25:07.751 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:25:07.752 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:25:07.752 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:25:07.752 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property msg
-2019-12-15 20:25:07.753 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:25:07.753 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'msg' renamed to 'msg'
-2019-12-15 20:25:07.754 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property msg to model
-2019-12-15 20:25:07.754 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:25:07.754 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:25:07.754 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:25:07.755 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:25:07.755 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property data
-2019-12-15 20:25:07.756 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:25:07.756 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'data' renamed to 'data'
-2019-12-15 20:25:07.757 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property data to model
-2019-12-15 20:25:07.758 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:25:07.758 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:25:07.758 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:25:07.759 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:25:07.759 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found data, msg, status
-2019-12-15 20:25:07.759 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:25:07.760 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key JSONResult
-2019-12-15 20:25:07.773 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:25:07.775 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method login
-2019-12-15 20:25:07.777 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:25:07.796 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method login
-2019-12-15 20:25:07.839 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:25:07.840 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:25:07.841 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:25:07.842 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |register|
-2019-12-15 20:25:07.846 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:25:07.847 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:25:07.849 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:25:07.857 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:25:07.874 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method register
-2019-12-15 20:25:07.881 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:25:07.883 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method register
-2019-12-15 20:25:07.889 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:25:07.889 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:25:07.895 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:25:07.897 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:25:07.899 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:25:07.907 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:25:07.909 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method usernameExisted
-2019-12-15 20:25:07.910 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:25:07.912 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method usernameExisted
-2019-12-15 20:25:07.961 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:25:08.003 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.1 seconds (JVM running for 6.477)
-2019-12-15 20:25:52.638 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 20:25:52.668 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /webjars/bycdao-ui/layer3.0.3/skin/default/layer.css
-2019-12-15 20:25:52.818 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /webjars/bycdao-ui/layui/css/modules/layer/default/layer.css
-2019-12-15 20:25:52.943 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /swagger-resources/configuration/ui
-2019-12-15 20:25:52.948 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /swagger-resources
-2019-12-15 20:25:53.086 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /v2/api-docs
-2019-12-15 20:25:53.086 [DEBUG] org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler[412 line] - Mapped to springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)
-2019-12-15 20:26:04.004 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /passport/login
-2019-12-15 20:26:04.179 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1020 line] - DateSourceHikariCP - configuration:
-2019-12-15 20:26:04.182 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - allowPoolSuspension.............false
-2019-12-15 20:26:04.182 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - autoCommit......................true
-2019-12-15 20:26:04.182 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - catalog.........................none
-2019-12-15 20:26:04.183 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionInitSql...............none
-2019-12-15 20:26:04.183 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionTestQuery............."SELECT 1"
-2019-12-15 20:26:04.183 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionTimeout...............30000
-2019-12-15 20:26:04.183 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSource......................none
-2019-12-15 20:26:04.183 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceClassName.............none
-2019-12-15 20:26:04.184 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceJNDI..................none
-2019-12-15 20:26:04.184 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceProperties............{password=<masked>}
-2019-12-15 20:26:04.184 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - driverClassName................."com.mysql.cj.jdbc.Driver"
-2019-12-15 20:26:04.185 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - healthCheckProperties...........{}
-2019-12-15 20:26:04.185 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - healthCheckRegistry.............none
-2019-12-15 20:26:04.185 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - idleTimeout.....................600000
-2019-12-15 20:26:04.185 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - initializationFailTimeout.......1
-2019-12-15 20:26:04.186 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - isolateInternalQueries..........false
-2019-12-15 20:26:04.186 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - jdbcUrl.........................jdbc:mysql://localhost:3306/ols?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8
-2019-12-15 20:26:04.186 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - leakDetectionThreshold..........0
-2019-12-15 20:26:04.186 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - maxLifetime.....................1800000
-2019-12-15 20:26:04.186 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - maximumPoolSize.................20
-2019-12-15 20:26:04.187 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - metricRegistry..................none
-2019-12-15 20:26:04.187 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - metricsTrackerFactory...........none
-2019-12-15 20:26:04.187 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - minimumIdle.....................5
-2019-12-15 20:26:04.187 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - password........................<masked>
-2019-12-15 20:26:04.187 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - poolName........................"DateSourceHikariCP"
-2019-12-15 20:26:04.188 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - readOnly........................false
-2019-12-15 20:26:04.188 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - registerMbeans..................false
-2019-12-15 20:26:04.188 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - scheduledExecutor...............none
-2019-12-15 20:26:04.189 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - schema..........................none
-2019-12-15 20:26:04.189 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - threadFactory...................internal
-2019-12-15 20:26:04.189 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - transactionIsolation............default
-2019-12-15 20:26:04.189 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - username........................"root"
-2019-12-15 20:26:04.190 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - validationTimeout...............5000
-2019-12-15 20:26:04.190 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-15 20:26:04.598 [DEBUG] com.zaxxer.hikari.pool.HikariPool.checkFailFast[566 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@559e021a
-2019-12-15 20:26:04.600 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-15 20:26:04.617 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==>  Preparing: select id, username, password, nickname, realname, face, mobile, email, sex, birthday, created_time, updated_time from users WHERE ( username = ? and password = ? ) 
-2019-12-15 20:26:04.644 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==> Parameters: davissching(String), wiG+KxbHnfivduGUkYF3bQ==(String)
-2019-12-15 20:26:04.673 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - <==      Total: 0
-2019-12-15 20:26:04.700 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
-2019-12-15 20:26:04.701 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
-2019-12-15 20:26:04.735 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@140aa369
-2019-12-15 20:26:04.765 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@64a83cc7
-2019-12-15 20:26:04.798 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@3518561d
-2019-12-15 20:26:04.863 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@31560fac
-2019-12-15 20:26:04.864 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After adding stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:26:09.912 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /passport/login
-2019-12-15 20:26:09.929 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==>  Preparing: select id, username, password, nickname, realname, face, mobile, email, sex, birthday, created_time, updated_time from users WHERE ( username = ? and password = ? ) 
-2019-12-15 20:26:09.931 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==> Parameters: davisching(String), wiG+KxbHnfivduGUkYF3bQ==(String)
-2019-12-15 20:26:09.939 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - <==      Total: 1
-2019-12-15 20:26:09.955 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 20:26:10.084 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /webjars/bycdao-ui/ace-editor/worker-json.js
-2019-12-15 20:26:34.709 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:26:34.709 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:04.713 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:04.713 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:34.722 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:34.723 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:54.831 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-15 20:27:54.831 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:27:54.833 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@559e021a: (connection evicted)
-2019-12-15 20:27:54.838 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@140aa369: (connection evicted)
-2019-12-15 20:27:54.841 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@64a83cc7: (connection evicted)
-2019-12-15 20:27:54.843 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3518561d: (connection evicted)
-2019-12-15 20:27:54.846 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@31560fac: (connection evicted)
-2019-12-15 20:27:54.848 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-2019-12-15 20:27:54.848 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-15 20:28:01.792 [DEBUG] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory[89 line] - Loaded expression factory via original TCCL
-2019-12-15 20:28:01.809 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[578 line] - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
-2019-12-15 20:28:01.810 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[579 line] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-2019-12-15 20:28:01.811 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[580 line] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-2019-12-15 20:28:01.811 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[581 line] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-2019-12-15 20:28:01.812 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[582 line] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-2019-12-15 20:28:01.915 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1957 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 20:28:01.920 [DEBUG] org.springframework.boot.StartupInfoLogger.logStarting[56 line] - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
-2019-12-15 20:28:01.920 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 20:28:04.241 [DEBUG] org.apache.ibatis.logging.LogFactory.setImplementation[105 line] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2019-12-15 20:28:04.876 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:28:04.877 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 20:28:04.878 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 20:28:05.000 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 20:28:05.099 [DEBUG] org.n3r.idworker.IdWorker.<init>[30 line] - worker starting. timestamp left shift 21, worker id 0
-2019-12-15 20:28:05.166 [DEBUG] com.zaxxer.hikari.HikariConfig.attemptFromContextLoader[900 line] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
-2019-12-15 20:28:05.976 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[54 line] - initialising the handler methods
-2019-12-15 20:28:05.979 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 20:28:05.997 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:28:05.998 [DEBUG] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory[89 line] - Loaded expression factory via original TCCL
-2019-12-15 20:28:06.001 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:28:06.002 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.messageInterpolator[148 line] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-2019-12-15 20:28:06.003 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.constraintValidatorFactory[180 line] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-2019-12-15 20:28:06.003 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.parameterNameProvider[194 line] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
-2019-12-15 20:28:06.004 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[120 line] - Trying to load META-INF/validation.xml for XML based Validator configuration.
-2019-12-15 20:28:06.005 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[53 line] - Trying to load META-INF/validation.xml via user class loader
-2019-12-15 20:28:06.005 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[60 line] - Trying to load META-INF/validation.xml via TCCL
-2019-12-15 20:28:06.006 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[66 line] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-2019-12-15 20:28:06.006 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[127 line] - No META-INF/validation.xml found. Using annotation based configuration only.
-2019-12-15 20:28:06.012 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[578 line] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-2019-12-15 20:28:06.012 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[579 line] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-2019-12-15 20:28:06.012 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[580 line] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-2019-12-15 20:28:06.012 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[581 line] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-2019-12-15 20:28:06.013 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[582 line] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-2019-12-15 20:28:06.353 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 20:28:06.372 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 20:28:06.385 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[50 line] - Total number of request handlers 9
-2019-12-15 20:28:06.386 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.387 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.388 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
-2019-12-15 20:28:06.388 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/check-availability], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/check-availability], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.388 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/login], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/login], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.389 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/register], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/register], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.389 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.389 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.389 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:28:06.401 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[58 line] - Combined number of request handlers 9
-2019-12-15 20:28:06.402 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 20:28:06.416 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:28:06.417 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:28:06.418 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:28:06.419 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |login|
-2019-12-15 20:28:06.422 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:28:06.457 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property username
-2019-12-15 20:28:06.460 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:28:06.461 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'username' renamed to 'username'
-2019-12-15 20:28:06.462 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property username to model
-2019-12-15 20:28:06.462 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:28:06.463 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:28:06.463 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:28:06.465 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:28:06.470 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property password
-2019-12-15 20:28:06.471 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:28:06.471 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'password' renamed to 'password'
-2019-12-15 20:28:06.471 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property password to model
-2019-12-15 20:28:06.471 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:28:06.472 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:28:06.472 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:28:06.472 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:28:06.473 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property confirmPassword
-2019-12-15 20:28:06.473 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:28:06.473 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'confirmPassword' renamed to 'confirmPassword'
-2019-12-15 20:28:06.473 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property confirmPassword to model
-2019-12-15 20:28:06.474 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:28:06.474 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:28:06.474 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:28:06.474 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:28:06.480 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found confirmPassword, password, username
-2019-12-15 20:28:06.482 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:28:06.483 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key 「用户创建」业务对象
-2019-12-15 20:28:06.486 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property status
-2019-12-15 20:28:06.487 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:28:06.487 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'status' renamed to 'status'
-2019-12-15 20:28:06.488 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property status to model
-2019-12-15 20:28:06.488 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:28:06.488 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:28:06.488 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:28:06.488 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:28:06.489 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property msg
-2019-12-15 20:28:06.489 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:28:06.489 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'msg' renamed to 'msg'
-2019-12-15 20:28:06.490 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property msg to model
-2019-12-15 20:28:06.490 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:28:06.490 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:28:06.490 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:28:06.490 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:28:06.491 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property data
-2019-12-15 20:28:06.491 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:28:06.491 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'data' renamed to 'data'
-2019-12-15 20:28:06.491 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property data to model
-2019-12-15 20:28:06.492 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:28:06.492 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:28:06.492 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:28:06.492 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:28:06.493 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found data, msg, status
-2019-12-15 20:28:06.493 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:28:06.493 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key JSONResult
-2019-12-15 20:28:06.504 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:28:06.506 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method login
-2019-12-15 20:28:06.507 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:28:06.516 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method login
-2019-12-15 20:28:06.532 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:28:06.532 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:28:06.533 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:28:06.533 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |register|
-2019-12-15 20:28:06.534 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:28:06.535 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:28:06.535 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:28:06.537 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:28:06.540 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method register
-2019-12-15 20:28:06.541 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:28:06.542 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method register
-2019-12-15 20:28:06.544 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:28:06.544 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:28:06.545 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:28:06.546 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:28:06.546 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:28:06.548 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:28:06.549 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method usernameExisted
-2019-12-15 20:28:06.549 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:28:06.550 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method usernameExisted
-2019-12-15 20:28:06.575 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:28:06.635 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.134 seconds (JVM running for 7.049)
-2019-12-15 20:28:20.572 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 20:28:20.598 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /passport/login
-2019-12-15 20:28:20.779 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1020 line] - DateSourceHikariCP - configuration:
-2019-12-15 20:28:20.781 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - allowPoolSuspension.............false
-2019-12-15 20:28:20.782 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - autoCommit......................true
-2019-12-15 20:28:20.796 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - catalog.........................none
-2019-12-15 20:28:20.796 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionInitSql...............none
-2019-12-15 20:28:20.797 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionTestQuery............."SELECT 1"
-2019-12-15 20:28:20.797 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - connectionTimeout...............30000
-2019-12-15 20:28:20.797 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSource......................none
-2019-12-15 20:28:20.798 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceClassName.............none
-2019-12-15 20:28:20.798 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceJNDI..................none
-2019-12-15 20:28:20.798 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - dataSourceProperties............{password=<masked>}
-2019-12-15 20:28:20.799 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - driverClassName................."com.mysql.cj.jdbc.Driver"
-2019-12-15 20:28:20.799 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - healthCheckProperties...........{}
-2019-12-15 20:28:20.799 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - healthCheckRegistry.............none
-2019-12-15 20:28:20.800 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - idleTimeout.....................600000
-2019-12-15 20:28:20.800 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - initializationFailTimeout.......1
-2019-12-15 20:28:20.801 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - isolateInternalQueries..........false
-2019-12-15 20:28:20.801 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - jdbcUrl.........................jdbc:mysql://localhost:3306/ols?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8
-2019-12-15 20:28:20.802 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - leakDetectionThreshold..........0
-2019-12-15 20:28:20.802 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - maxLifetime.....................1800000
-2019-12-15 20:28:20.802 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - maximumPoolSize.................20
-2019-12-15 20:28:20.803 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - metricRegistry..................none
-2019-12-15 20:28:20.803 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - metricsTrackerFactory...........none
-2019-12-15 20:28:20.804 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - minimumIdle.....................5
-2019-12-15 20:28:20.804 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - password........................<masked>
-2019-12-15 20:28:20.804 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - poolName........................"DateSourceHikariCP"
-2019-12-15 20:28:20.805 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - readOnly........................false
-2019-12-15 20:28:20.806 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - registerMbeans..................false
-2019-12-15 20:28:20.806 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - scheduledExecutor...............none
-2019-12-15 20:28:20.806 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - schema..........................none
-2019-12-15 20:28:20.806 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - threadFactory...................internal
-2019-12-15 20:28:20.807 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - transactionIsolation............default
-2019-12-15 20:28:20.807 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - username........................"root"
-2019-12-15 20:28:20.807 [DEBUG] com.zaxxer.hikari.HikariConfig.logConfiguration[1052 line] - validationTimeout...............5000
-2019-12-15 20:28:20.807 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-15 20:28:21.201 [DEBUG] com.zaxxer.hikari.pool.HikariPool.checkFailFast[566 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce7e0c7
-2019-12-15 20:28:21.203 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-15 20:28:21.217 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==>  Preparing: select id, username, password, nickname, realname, face, mobile, email, sex, birthday, created_time, updated_time from users WHERE ( username = ? and password = ? ) 
-2019-12-15 20:28:21.240 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - ==> Parameters: davisching(String), wiG+KxbHnfivduGUkYF3bQ==(String)
-2019-12-15 20:28:21.258 [DEBUG] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[143 line] - <==      Total: 1
-2019-12-15 20:28:21.293 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 20:28:21.306 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
-2019-12-15 20:28:21.307 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
-2019-12-15 20:28:21.336 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@795bc852
-2019-12-15 20:28:21.361 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@9947bdb
-2019-12-15 20:28:21.387 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@58493d26
-2019-12-15 20:28:21.434 [DEBUG] com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call[730 line] - DateSourceHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c0701de
-2019-12-15 20:28:21.436 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After adding stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:28:51.313 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:28:51.314 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:29:21.319 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:29:21.320 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:29:51.325 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:29:51.325 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:30:21.328 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:30:21.328 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:30:51.333 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:30:51.334 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:31:21.339 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:31:21.339 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:31:51.346 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:31:51.347 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:32:21.350 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:32:21.351 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:32:51.356 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:32:51.356 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:33:21.362 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:33:21.363 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:33:51.365 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:33:51.366 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:34:21.371 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:34:21.372 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:34:51.378 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:34:51.378 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:35:21.368 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:35:21.370 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:35:51.365 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before cleanup stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:35:51.365 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After cleanup  stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:36:01.288 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-15 20:36:01.289 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - Before shutdown stats (total=5, active=0, idle=5, waiting=0)
-2019-12-15 20:36:01.292 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ce7e0c7: (connection evicted)
-2019-12-15 20:36:01.295 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@795bc852: (connection evicted)
-2019-12-15 20:36:01.297 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@9947bdb: (connection evicted)
-2019-12-15 20:36:01.298 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@58493d26: (connection evicted)
-2019-12-15 20:36:01.300 [DEBUG] com.zaxxer.hikari.pool.PoolBase.quietlyCloseConnection[129 line] - DateSourceHikariCP - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5c0701de: (connection evicted)
-2019-12-15 20:36:01.301 [DEBUG] com.zaxxer.hikari.pool.HikariPool.logPoolState[417 line] - DateSourceHikariCP - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-2019-12-15 20:36:01.302 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-15 20:36:12.416 [DEBUG] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory[89 line] - Loaded expression factory via original TCCL
-2019-12-15 20:36:12.433 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[578 line] - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
-2019-12-15 20:36:12.438 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[579 line] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-2019-12-15 20:36:12.439 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[580 line] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-2019-12-15 20:36:12.439 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[581 line] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-2019-12-15 20:36:12.440 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[582 line] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-2019-12-15 20:36:12.585 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1986 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 20:36:12.601 [DEBUG] org.springframework.boot.StartupInfoLogger.logStarting[56 line] - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
-2019-12-15 20:36:12.602 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 20:36:14.076 [DEBUG] org.apache.ibatis.logging.LogFactory.setImplementation[105 line] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-2019-12-15 20:36:14.520 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:36:14.521 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 20:36:14.522 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 20:36:14.608 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 20:36:14.675 [DEBUG] org.n3r.idworker.IdWorker.<init>[30 line] - worker starting. timestamp left shift 21, worker id 0
-2019-12-15 20:36:14.724 [DEBUG] com.zaxxer.hikari.HikariConfig.attemptFromContextLoader[900 line] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
-2019-12-15 20:36:15.515 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[54 line] - initialising the handler methods
-2019-12-15 20:36:15.520 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 20:36:15.538 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:36:15.538 [DEBUG] org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.buildExpressionFactory[89 line] - Loaded expression factory via original TCCL
-2019-12-15 20:36:15.541 [DEBUG] org.hibernate.validator.internal.engine.resolver.TraversableResolvers.getDefault[60 line] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-2019-12-15 20:36:15.541 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.messageInterpolator[148 line] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-2019-12-15 20:36:15.542 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.constraintValidatorFactory[180 line] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-2019-12-15 20:36:15.543 [DEBUG] org.hibernate.validator.internal.engine.ConfigurationImpl.parameterNameProvider[194 line] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
-2019-12-15 20:36:15.544 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[120 line] - Trying to load META-INF/validation.xml for XML based Validator configuration.
-2019-12-15 20:36:15.544 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[53 line] - Trying to load META-INF/validation.xml via user class loader
-2019-12-15 20:36:15.545 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[60 line] - Trying to load META-INF/validation.xml via TCCL
-2019-12-15 20:36:15.545 [DEBUG] org.hibernate.validator.internal.xml.config.ResourceLoaderHelper.getResettableInputStreamForPath[66 line] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-2019-12-15 20:36:15.545 [DEBUG] org.hibernate.validator.internal.xml.config.ValidationXmlParser.getValidationXmlInputStream[127 line] - No META-INF/validation.xml found. Using annotation based configuration only.
-2019-12-15 20:36:15.550 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[578 line] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-2019-12-15 20:36:15.550 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[579 line] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-2019-12-15 20:36:15.550 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[580 line] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-2019-12-15 20:36:15.550 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[581 line] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-2019-12-15 20:36:15.551 [DEBUG] org.hibernate.validator.internal.engine.ValidatorFactoryImpl.logValidatorFactoryScopedConfiguration[582 line] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-2019-12-15 20:36:15.863 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 20:36:15.880 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 20:36:15.894 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[50 line] - Total number of request handlers 9
-2019-12-15 20:36:15.895 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.896 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.897 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/error], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/error], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[text/html]}}
-2019-12-15 20:36:15.897 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/check-availability], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/check-availability], supportedMethods=[GET], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.897 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/login], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/login], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.897 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/passport/register], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/passport/register], supportedMethods=[POST], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.898 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/security], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/security], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.898 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources/configuration/ui], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources/configuration/ui], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.898 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[52 line] - Adding key: [/swagger-resources], WebMvcRequestHandler{key=RequestHandlerKey{pathMappings=[/swagger-resources], supportedMethods=[], supportedMediaTypes=[], producibleMediaTypes=[]}}
-2019-12-15 20:36:15.911 [DEBUG] springfox.documentation.spring.web.plugins.DefaultRequestHandlerCombiner.combine[58 line] - Combined number of request handlers 9
-2019-12-15 20:36:15.912 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 20:36:15.928 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:36:15.929 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:36:15.930 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:36:15.931 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |login|
-2019-12-15 20:36:15.935 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |login|
-2019-12-15 20:36:15.977 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property username
-2019-12-15 20:36:15.981 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:36:15.981 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'username' renamed to 'username'
-2019-12-15 20:36:15.982 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property username to model
-2019-12-15 20:36:15.983 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:36:15.983 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:36:15.983 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:36:15.985 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setUsername
-2019-12-15 20:36:15.992 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property password
-2019-12-15 20:36:15.992 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:36:15.992 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'password' renamed to 'password'
-2019-12-15 20:36:15.993 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property password to model
-2019-12-15 20:36:15.993 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:36:15.993 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:36:15.993 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:36:15.994 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setPassword
-2019-12-15 20:36:15.994 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property confirmPassword
-2019-12-15 20:36:15.994 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:36:15.995 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForDeserialization[73 line] - Name 'confirmPassword' renamed to 'confirmPassword'
-2019-12-15 20:36:15.995 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property confirmPassword to model
-2019-12-15 20:36:15.995 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:36:15.995 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:36:15.996 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:36:15.996 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[73 line] - Evaluating unwrapped setter for member setConfirmPassword
-2019-12-15 20:36:16.002 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found confirmPassword, password, username
-2019-12-15 20:36:16.004 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:36:16.005 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key 「用户创建」业务对象
-2019-12-15 20:36:16.008 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property status
-2019-12-15 20:36:16.009 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:36:16.009 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'status' renamed to 'status'
-2019-12-15 20:36:16.010 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property status to model
-2019-12-15 20:36:16.010 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:36:16.010 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:36:16.010 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:36:16.011 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getStatus
-2019-12-15 20:36:16.011 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property msg
-2019-12-15 20:36:16.011 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:36:16.012 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'msg' renamed to 'msg'
-2019-12-15 20:36:16.012 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property msg to model
-2019-12-15 20:36:16.012 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:36:16.013 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:36:16.013 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:36:16.013 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getMsg
-2019-12-15 20:36:16.013 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.propertiesFor[127 line] - Reading property data
-2019-12-15 20:36:16.014 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:36:16.014 [DEBUG] springfox.documentation.schema.property.ObjectMapperBeanPropertyNamingStrategy.nameForSerialization[57 line] - Name 'data' renamed to 'data'
-2019-12-15 20:36:16.014 [DEBUG] springfox.documentation.schema.property.OptimizedModelPropertiesProvider.beanModelProperty[315 line] - Adding property data to model
-2019-12-15 20:36:16.014 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:36:16.015 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:36:16.015 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:36:16.015 [DEBUG] springfox.documentation.schema.property.bean.BeanModelProperty.paramOrReturnType[70 line] - Evaluating unwrapped getter for member getData
-2019-12-15 20:36:16.015 [DEBUG] springfox.documentation.schema.DefaultModelProvider.reflectionBasedModel[101 line] - Inferred 3 properties. Properties found data, msg, status
-2019-12-15 20:36:16.016 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:36:16.016 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.mergeModelMap[89 line] - Adding a new model with key JSONResult
-2019-12-15 20:36:16.029 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:36:16.031 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method login
-2019-12-15 20:36:16.032 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:36:16.041 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method login
-2019-12-15 20:36:16.058 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:36:16.058 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:36:16.059 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[90 line] - Adding input parameter of type Lpers/dc/ols/pojo/bo/UserBO;
-2019-12-15 20:36:16.059 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |register|
-2019-12-15 20:36:16.061 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |register|
-2019-12-15 20:36:16.061 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: 「用户创建」业务对象, name: 「用户创建」业务对象, schema: {} models
-2019-12-15 20:36:16.061 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:36:16.063 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:36:16.067 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method register
-2019-12-15 20:36:16.069 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:36:16.070 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method register
-2019-12-15 20:36:16.076 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectFromReturnType[76 line] - Adding return parameter of type Lpers/dc/ols/utils/JSONResult;
-2019-12-15 20:36:16.076 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[83 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:36:16.079 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationModelsProvider.collectParameters[94 line] - Finished reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:36:16.080 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationModelsProvider.collectApiResponses[84 line] - Reading parameters models for handlerMethod |usernameExisted|
-2019-12-15 20:36:16.081 [DEBUG] springfox.documentation.spring.web.scanners.ApiModelReader.read[71 line] - Generated parameter model id: JSONResult, name: JSONResult, schema: {} models
-2019-12-15 20:36:16.085 [DEBUG] springfox.documentation.spring.web.readers.operation.OperationResponseClassReader.apply[59 line] - Setting spring response class to: JSONResult
-2019-12-15 20:36:16.088 [DEBUG] springfox.documentation.swagger.readers.operation.VendorExtensionsReader.apply[59 line] - Extension count 1 for method usernameExisted
-2019-12-15 20:36:16.089 [DEBUG] springfox.documentation.swagger.readers.operation.SwaggerOperationResponseClassReader.apply[74 line] - Setting response class to:JSONResult
-2019-12-15 20:36:16.091 [DEBUG] springfox.documentation.swagger.readers.operation.OperationAuthReader.apply[103 line] - Authorization count 0 for method usernameExisted
-2019-12-15 20:36:16.137 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:36:16.192 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.088 seconds (JVM running for 5.755)
-2019-12-15 20:36:43.491 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 20:36:43.512 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /
-2019-12-15 20:36:43.524 [INFO ] pers.dc.ols.controller.HelloController.hello[21 line] - 测试日志
-2019-12-15 20:37:02.415 [DEBUG] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod[108 line] - looking up handler for path: /
-2019-12-15 20:37:02.416 [INFO ] pers.dc.ols.controller.HelloController.hello[21 line] - 测试日志
-2019-12-15 20:39:20.763 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2001 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 20:39:20.773 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 20:39:22.931 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:39:22.932 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 20:39:22.933 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 20:39:23.066 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 20:39:25.238 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 20:39:25.572 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 20:39:25.589 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 20:39:25.620 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 20:39:25.800 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:39:25.903 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 6.15 seconds (JVM running for 8.944)
-2019-12-15 20:39:48.249 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2008 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 20:39:48.260 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 20:39:50.047 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:39:50.048 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 20:39:50.049 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 20:39:50.132 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 20:39:50.990 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 20:39:51.270 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 20:39:51.284 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 20:39:51.311 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 20:39:51.462 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 20:39:51.493 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 3.643 seconds (JVM running for 5.417)
-2019-12-15 20:40:05.010 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 20:40:05.036 [INFO ] pers.dc.ols.controller.HelloController.hello[20 line] - 测试日志
-2019-12-15 20:40:25.593 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-15 20:40:25.973 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-15 20:40:26.020 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 20:49:01.422 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-15 20:49:01.448 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-15 21:22:35.366 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2280 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 21:22:35.390 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 21:22:37.483 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 21:22:37.485 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 21:22:37.485 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 21:22:37.580 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 21:22:38.625 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 21:22:39.094 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 21:22:39.114 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 21:22:39.142 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 21:22:39.305 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 21:22:39.341 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.544 seconds (JVM running for 6.418)
-2019-12-15 21:22:49.123 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:23:17.662 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务开始 ========
-2019-12-15 21:23:17.752 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-15 21:23:18.192 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-15 21:23:18.228 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务结束，用时 562 毫秒 ========
-2019-12-15 21:24:38.136 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务开始 ========
-2019-12-15 21:24:38.153 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ======== 【pers.dc.ols.service.impl.UserServiceImpl-pers.dc.ols.service.impl.UserServiceImpl】 服务结束，用时 14 毫秒 ========
-2019-12-15 21:24:38.164 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 21:26:23.167 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-15 21:26:23.176 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-15 21:26:35.006 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 2298 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-15 21:26:35.025 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-15 21:26:37.245 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-15 21:26:37.247 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-15 21:26:37.248 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-15 21:26:37.349 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-15 21:26:38.385 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-15 21:26:38.825 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-15 21:26:38.842 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-15 21:26:38.870 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-15 21:26:39.022 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-15 21:26:39.065 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.508 seconds (JVM running for 6.388)
-2019-12-15 21:26:48.353 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:27:02.704 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
-2019-12-15 21:27:02.778 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-15 21:27:03.211 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-15 21:27:03.254 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 546 毫秒 ======
-2019-12-15 21:27:20.179 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】开始 ======
-2019-12-15 21:27:20.195 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】结束，用时 15 毫秒 ======
-2019-12-15 21:27:20.205 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 21:27:37.144 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】开始 ======
-2019-12-15 21:27:37.150 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 userLogin】结束，用时 6 毫秒 ======
-2019-12-15 21:27:37.151 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
-2019-12-15 21:27:46.150 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
-2019-12-15 21:27:46.158 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 7 毫秒 ======
-2019-12-15 21:27:53.483 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
-2019-12-15 21:27:53.492 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 9 毫秒 ======
-2019-12-15 21:28:05.789 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
-2019-12-15 21:28:05.799 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 9 毫秒 ======
-2019-12-15 21:28:17.561 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】开始 ======
-2019-12-15 21:28:17.570 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 7 毫秒 ======
-2019-12-15 21:28:17.574 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 createUser】开始 ======
-2019-12-15 21:28:17.594 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 createUser】结束，用时 19 毫秒 ======
-2019-12-15 21:28:17.606 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-19 17:30:37.270 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1338 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-19 17:30:37.328 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-19 17:30:42.824 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-19 17:30:42.826 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-19 17:30:42.827 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-19 17:30:43.002 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-19 17:30:45.097 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-19 17:30:45.599 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-19 17:30:45.626 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-19 17:30:45.676 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-19 17:30:46.103 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-19 17:30:46.137 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 10.787 seconds (JVM running for 14.655)
+2019-12-19 17:31:31.871 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 17:32:09.822 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:09.931 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-19 17:32:09.990 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.200 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.382 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.386 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.665 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-19 17:32:10.719 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 724 毫秒 ======
+2019-12-19 17:32:10.719 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 328 毫秒 ======
+2019-12-19 17:32:10.727 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 343 毫秒 ======
+2019-12-19 17:32:10.742 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 541 毫秒 ======
+2019-12-19 17:32:10.744 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 920 毫秒 ======
+2019-12-19 17:32:10.774 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.778 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:10.934 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:10.937 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 2 毫秒 ======
+2019-12-19 17:32:11.386 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:11.389 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 2 毫秒 ======
+2019-12-19 17:32:11.459 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:11.462 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 2 毫秒 ======
+2019-12-19 17:32:11.662 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:11.666 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:11.822 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:11.826 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 4 毫秒 ======
+2019-12-19 17:32:12.418 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:12.425 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 5 毫秒 ======
+2019-12-19 17:32:12.508 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:12.511 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 2 毫秒 ======
+2019-12-19 17:32:12.727 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:12.733 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 6 毫秒 ======
+2019-12-19 17:32:35.398 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:35.402 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:36.502 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:36.508 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 6 毫秒 ======
+2019-12-19 17:32:37.117 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:37.121 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 4 毫秒 ======
+2019-12-19 17:32:37.629 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:37.632 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:37.802 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:37.805 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 2 毫秒 ======
+2019-12-19 17:32:38.441 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:38.445 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:41.946 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:41.950 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 4 毫秒 ======
+2019-12-19 17:32:42.405 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:42.409 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:43.975 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:43.980 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:44.399 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:44.402 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:56.355 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ checkIfUsernameExisted】开始 ======
+2019-12-19 17:32:56.359 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 checkIfUsernameExisted】结束，用时 3 毫秒 ======
+2019-12-19 17:32:56.362 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl ￿｜ createUser】开始 ======
+2019-12-19 17:32:56.393 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - ====== 服务【pers.dc.ols.service.impl.UserServiceImpl 的 createUser】结束，用时 31 毫秒 ======
+2019-12-19 17:32:56.410 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========
+2019-12-19 17:41:57.829 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-19 17:41:57.846 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-19 17:44:48.498 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 1404 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-19 17:44:48.516 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-19 17:44:50.641 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-19 17:44:50.643 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-19 17:44:50.644 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-19 17:44:50.765 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-19 17:44:51.915 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-19 17:44:52.436 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-19 17:44:52.467 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-19 17:44:52.500 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-19 17:44:52.724 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-19 17:44:52.756 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.966 seconds (JVM running for 6.965)
+2019-12-19 17:45:23.843 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-19 17:45:33.653 [INFO ] pers.dc.ols.utils.CookieUtils.doSetCookie[199 line] - ========== domainName: localhost ==========

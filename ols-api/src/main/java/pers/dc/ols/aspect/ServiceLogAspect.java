@@ -41,10 +41,10 @@ public class ServiceLogAspect {
     }
 
     private String getStartStr() {
-        return "======【" + className + " ￿的 " + serviceName + " 服务】开始 ======";
+        return "\n======【" + className + " ￿的 " + serviceName + " 服务】开始 ======";
     }
 
     private String getEndStr(long timeCost) {
-        return "======【" + className + " 的 " + serviceName + " 服务】结束，用时 " + timeCost + " 毫秒 ======";
+        return "======【" + className + " 的 " + serviceName + " 服务】结束，用时 " + timeCost + " 毫秒 ======\n";
     }
 }

@@ -26,4 +26,34 @@
                            ON f.id = c.father_id
         WHERE f.father_id = #{rootCatId}
     </select>
+
+    <resultMap id="recommendCatVO" type="pers.dc.ols.pojo.vo.RecommendCatVO">
+        <result column="rootCatName" property="rootCatName"/>
+        <result column="slogan" property="slogan"/>
+        <result column="bgColor" property="bgColor"/>
+        <result column="catImage" property="catImage"/>
+        <collection property="simpleItemList" ofType="pers.dc.ols.pojo.vo.RecommendItemVO">
+            <result column="itemId" property="itemId"/>
+            <result column="itemName" property="itemName"/>
+            <result column="itemUrl" property="itemUrl"/>
+        </collection>
+    </resultMap>
+
+    <select id="getSixNewItems" parameterType="int" resultMap="recommendCatVO">
+        SELECT
+            root.`name` as rootCatName,
+            root.slogan as slogan,
+            root.bg_color as bgColor,
+            root.cat_image as catImage,
+            item.item_name as itemName,
+            item.id as itemId,
+            img.url as itemUrl
+        FROM category root
+                 LEFT JOIN items item
+                           ON item.root_cat_id = root.id
+                 LEFT JOIN items_img img
+                           ON img.item_id = item.id
+        WHERE root.id = #{rootCatId}
+        ORDER BY item.sell_counts DESC limit 6
+    </select>
 </mapper>

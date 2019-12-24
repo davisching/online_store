@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaa478bb-3922-4528-8ea6-dff609cc5e05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ols-mapper/src/main/java/pers/dc/ols/mapper/CategoryMapperCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ols-mapper/src/main/resources/mapper/CategoryMapperCustom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ols-pojo/src/main/java/pers/dc/ols/pojo/vo/CategorySubVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ols-pojo/src/main/java/pers/dc/ols/pojo/vo/CategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ols-pojo/src/main/java/pers/dc/ols/pojo/vo/RecommendCatVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ols-pojo/src/main/java/pers/dc/ols/pojo/vo/RecommendItemVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/all.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
@@ -15,9 +11,12 @@
       <change beforePath="$PROJECT_DIR$/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/warn.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/src/main/java/pers/dc/ols/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ols-api/target/classes/pers/dc/ols/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-api/target/classes/pers/dc/ols/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/impl/CarouselServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/impl/CarouselServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/impl/CarouselServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/impl/CarouselServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-mapper/src/main/java/pers/dc/ols/mapper/CategoryMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-mapper/src/main/java/pers/dc/ols/mapper/CategoryMapperCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-mapper/src/main/resources/mapper/CategoryMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ols-mapper/src/main/resources/mapper/CategoryMapperCustom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/src/main/java/pers/dc/ols/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/ols-service/target/classes/pers/dc/ols/service/impl/CategoryServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +249,7 @@
       <workItem from="1576479107197" duration="6000" />
       <workItem from="1576747802497" duration="1793000" />
       <workItem from="1577091042915" duration="5221000" />
-      <workItem from="1577180498572" duration="2056000" />
+      <workItem from="1577180498572" duration="5630000" />
     </task>
     <servers />
   </component>
@@ -281,10 +280,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="573" y="335" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1576062422285" />
-    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1577181476281">
+    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1577194064595">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1577181476281" />
+    <state x="653" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1577194064595" />
     <state x="436" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576150487195">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -301,45 +300,45 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1576225530516" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1577182702656">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1577194099264">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702656" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099264" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576750874972" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1577182702654">
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1577194099262">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702654" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099262" />
     <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1576750874970" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1577182702653">
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1577194099261">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702653" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099261" />
     <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1576750874966" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1577182702655">
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1577194099263">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702655" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099263" />
     <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1576750874971" />
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1577182702660">
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom" timestamp="1577194099268">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702660" />
+    <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099268" />
     <state width="1638" height="295" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1576750874984" />
-    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1577182702658">
+    <state width="1638" height="295" key="GridCell.Tab.1.center" timestamp="1577194099266">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702658" />
+    <state width="1638" height="295" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099266" />
     <state width="1638" height="295" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1576750874979" />
-    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1577182702657">
+    <state width="1638" height="295" key="GridCell.Tab.1.left" timestamp="1577194099265">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702657" />
+    <state width="1638" height="295" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099265" />
     <state width="1638" height="295" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1576750874977" />
-    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1577182702659">
+    <state width="1638" height="295" key="GridCell.Tab.1.right" timestamp="1577194099267">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577182702659" />
+    <state width="1638" height="295" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1577194099267" />
     <state width="1638" height="295" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1576750874982" />
     <state width="1638" height="363" key="GridCell.Tab.2.bottom" timestamp="1576417190774">
       <screen x="0" y="23" width="1680" height="963" />

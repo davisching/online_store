@@ -8,6 +8,7 @@ import pers.dc.ols.mapper.CategoryMapperCustom;
 import pers.dc.ols.pojo.Category;
 import pers.dc.ols.pojo.CategoryExample;
 import pers.dc.ols.pojo.vo.CategoryVO;
+import pers.dc.ols.pojo.vo.RecommendCatVO;
 import pers.dc.ols.service.CategoryService;
 
 import javax.annotation.Resource;
@@ -35,5 +36,10 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<CategoryVO> queryAllCatIn(int fatherId) {
         return categoryMapperCustom.getSubCatList(fatherId);
+    }
+
+    @Override
+    public List<RecommendCatVO> getSixNewItems(int rootId) {
+        return categoryMapperCustom.getSixNewItems(rootId);
     }
 }

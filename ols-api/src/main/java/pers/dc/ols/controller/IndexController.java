@@ -3,6 +3,7 @@ package pers.dc.ols.controller;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.models.auth.In;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,11 +40,21 @@ public class IndexController {
 
     @ApiOperation("获取子级分类")
     @GetMapping("/subCat/{fatherId}")
-    public JSONResult subCat(
+    public JSONResult subCat (
             @ApiParam(value = "父级分类ID", required = true)
             @PathVariable("fatherId") Integer fatherId) {
         if (fatherId == null)
             return JSONResult.errorMsg("分类不存在");
         return JSONResult.ok(categoryService.queryAllCatIn(fatherId));
+    }
+
+    @ApiOperation("获取各分类推荐商品")
+    @GetMapping("/sixNewItems/{rootCatId}")
+    public JSONResult sixNewItems (
+            @ApiParam(value = "根级分类ID", required = true)
+            @PathVariable("rootCatId") Integer rootCatId ) {
+        if (rootCatId == null)
+            return JSONResult.errorMsg("分类不存在");
+        return JSONResult.ok(categoryService.getSixNewItems(rootCatId));
     }
 }

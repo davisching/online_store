@@ -38,6 +38,7 @@ public class CategoryServiceImpl implements CategoryService {
         return categoryMapperCustom.getSubCatList(fatherId);
     }
 
+    @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<RecommendCatVO> getSixNewItems(int rootId) {
         return categoryMapperCustom.getSixNewItems(rootId);

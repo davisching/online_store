@@ -11,6 +11,7 @@ import pers.dc.ols.pojo.ItemCommentExample;
 import pers.dc.ols.pojo.vo.CommentRecordVO;
 import pers.dc.ols.pojo.vo.CountsVO;
 import pers.dc.ols.service.CommentService;
+import pers.dc.ols.service.common.PagingService;
 import pers.dc.ols.utils.DesensitizationUtil;
 import pers.dc.ols.utils.PagedGridResult;
 
@@ -18,7 +19,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-public class CommentServiceImpl implements CommentService {
+public class CommentServiceImpl extends PagingService implements CommentService {
 
     @Resource CustomCommentMapper customCommentMapper;
     @Resource ItemCommentMapper itemCommentMapper;
@@ -30,13 +31,7 @@ public class CommentServiceImpl implements CommentService {
         List<CommentRecordVO> comments = customCommentMapper.getComments(itemId, level);
         for (CommentRecordVO comment : comments)
             comment.setNickname(DesensitizationUtil.commonDisplay(comment.getNickname()));
-        PageInfo<?> pageList = new PageInfo<>(comments);
-        PagedGridResult result = new PagedGridResult();
-        result.setPage(page);
-        result.setRows(comments);
-        result.setTotal(pageList.getPages());
-        result.setRecords(pageList.getTotal());
-        return result;
+        return getResult(comments, page, pageSize);
     }
 
     @Transactional(propagation = Propagation.SUPPORTS)
@@ -58,6 +53,5 @@ public class CommentServiceImpl implements CommentService {
         countsVO.sum();
         return countsVO;
     }
-
 
 }

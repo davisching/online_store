@@ -13,6 +13,7 @@ import pers.dc.ols.pojo.vo.CountsVO;
 import pers.dc.ols.pojo.vo.ItemInfoVO;
 import pers.dc.ols.service.CommentService;
 import pers.dc.ols.service.ItemService;
+import pers.dc.ols.service.SearchService;
 import pers.dc.ols.utils.JSONResult;
 
 import javax.annotation.Resource;
@@ -25,6 +26,7 @@ public class ItemController {
 
     @Resource private ItemService itemService;
     @Resource private CommentService commentService;
+    @Resource private SearchService searchService;
 
     @ApiOperation("获取商品页信息")
     @GetMapping("/info/{itemId}")
@@ -58,5 +60,17 @@ public class ItemController {
     @GetMapping("/commentLevel")
     public JSONResult getCommentLevel(@RequestParam("itemId") String itemId) {
         return JSONResult.ok(commentService.getCounts(itemId));
+    }
+
+    @ApiOperation("商品搜索")
+    @GetMapping("/search")
+    public JSONResult search( @RequestParam("keywords") String keywords,
+                              @RequestParam(value = "sort", required = false) String sort,
+                              @RequestParam(value = "page", required = false) Integer page,
+                              @RequestParam(value = "pageSize", required = false) Integer pageSize) {
+        if (sort == null) sort = "k";
+        if (page == null) page = 1;
+        if (pageSize == null) pageSize = 20;
+        return JSONResult.ok(searchService.getSearchResults(keywords, sort, page, pageSize));
     }
 }

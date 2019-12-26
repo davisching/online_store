@@ -49,6 +49,8 @@ public class ItemController {
                                    @RequestParam(value = "level", required = false) String level,
                                    @RequestParam(value = "page", required = false) Integer page,
                                    @RequestParam(value = "pageSize", required = false) Integer pageSize) {
+        if (page == null) page = 1;
+        if (pageSize == null) pageSize = 10;
         return JSONResult.ok(commentService.getComments(itemId, level, page, pageSize));
     }
 

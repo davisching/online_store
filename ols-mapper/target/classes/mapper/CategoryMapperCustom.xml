@@ -54,6 +54,6 @@
                  LEFT JOIN items_img img
                            ON img.item_id = item.id
         WHERE root.id = #{rootCatId}
-        ORDER BY item.sell_counts DESC limit 6
+        ORDER BY item.created_time DESC limit 6
     </select>
 </mapper>

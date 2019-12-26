@@ -11,6 +11,7 @@ import pers.dc.ols.pojo.ItemCommentExample;
 import pers.dc.ols.pojo.vo.CommentRecordVO;
 import pers.dc.ols.pojo.vo.CountsVO;
 import pers.dc.ols.service.CommentService;
+import pers.dc.ols.utils.DesensitizationUtil;
 import pers.dc.ols.utils.PagedGridResult;
 
 import javax.annotation.Resource;
@@ -27,6 +28,8 @@ public class CommentServiceImpl implements CommentService {
     public PagedGridResult getComments(String itemId, String level, Integer page, Integer pageSize) {
         PageHelper.startPage(page, pageSize);
         List<CommentRecordVO> comments = customCommentMapper.getComments(itemId, level);
+        for (CommentRecordVO comment : comments)
+            comment.setNickname(DesensitizationUtil.commonDisplay(comment.getNickname()));
         PageInfo<?> pageList = new PageInfo<>(comments);
         PagedGridResult result = new PagedGridResult();
         result.setPage(page);

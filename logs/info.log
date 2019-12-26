@@ -1,1463 +1,260 @@
-2019-12-25 20:16:56.237 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3107 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 20:16:56.292 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 20:16:58.738 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 20:16:58.740 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 20:16:58.741 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 20:16:58.875 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 20:17:00.229 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 20:17:00.740 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 20:17:00.778 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 20:17:00.820 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 20:17:01.079 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 20:17:01.128 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.489 seconds (JVM running for 8.263)
-2019-12-25 20:17:37.806 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 20:17:37.920 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:42:34.590 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 816 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-26 19:42:34.635 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-26 19:42:36.826 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-26 19:42:36.828 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-26 19:42:36.829 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 19:42:36.966 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-26 19:42:38.306 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 19:42:38.811 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-26 19:42:38.851 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-26 19:42:38.897 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-26 19:42:39.170 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-26 19:42:39.204 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.308 seconds (JVM running for 8.12)
+2019-12-26 19:42:51.003 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 19:43:13.439 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 20:17:37.920 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:43:13.569 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-26 19:43:14.355 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-26 19:43:14.499 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 1054 毫秒 ======
 
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 20:17:38.030 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 20:17:39.012 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 20:17:39.151 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 1231 毫秒 ======
+2019-12-26 19:43:39.876 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
-2019-12-25 20:17:39.151 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 1226 毫秒 ======
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:43:39.908 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 30 毫秒 ======
 
-2019-12-25 20:17:39.400 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 20:17:39.437 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 35 毫秒 ======
-
-2019-12-25 20:17:44.698 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 20:17:44.716 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 20:17:45.343 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 20:17:45.353 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 20:17:48.516 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 20:17:48.578 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 58 毫秒 ======
-
-2019-12-25 20:17:48.581 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 20:17:48.597 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 16 毫秒 ======
-
-2019-12-25 20:17:48.599 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 20:17:48.635 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 34 毫秒 ======
-
-2019-12-25 20:17:48.636 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 20:17:48.657 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 19 毫秒 ======
-
-2019-12-25 20:40:28.088 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 20:40:28.088 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:00.675 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 20:40:28.122 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 27 毫秒 ======
+2019-12-26 19:46:00.681 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
-2019-12-25 20:40:28.137 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 45 毫秒 ======
+======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
+2019-12-26 19:46:00.754 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 73 毫秒 ======
 
-2019-12-25 20:40:28.324 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:00.765 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 89 毫秒 ======
 
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 20:40:28.349 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 20:40:30.200 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:00.875 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 20:40:30.227 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 23 毫秒 ======
+2019-12-26 19:46:00.909 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 34 毫秒 ======
 
-2019-12-25 20:40:32.226 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 20:40:32.258 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 29 毫秒 ======
-
-2019-12-25 20:40:32.260 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 20:40:32.286 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 24 毫秒 ======
-
-2019-12-25 20:40:32.287 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 20:40:32.321 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 33 毫秒 ======
-
-2019-12-25 20:40:32.323 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 20:40:32.337 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:09:38.466 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:09:38.477 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:09:52.425 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3288 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:09:52.445 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:09:54.569 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:09:54.570 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:09:54.571 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:09:54.690 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:09:55.905 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:09:56.345 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:09:56.382 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:09:56.420 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:09:56.663 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:09:56.694 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.913 seconds (JVM running for 6.843)
-2019-12-25 21:10:08.213 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:10:34.899 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:10:34.966 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:10:35.429 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:16:31.451 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:17:30.777 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:17:30.792 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:17:37.167 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3310 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:17:37.181 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:17:39.346 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:17:39.348 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:17:39.349 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:17:39.475 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:17:40.792 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:17:41.283 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:17:41.321 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:17:41.357 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:17:41.605 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:17:41.634 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.152 seconds (JVM running for 6.766)
-2019-12-25 21:17:56.213 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:18:06.643 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:18:06.706 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:18:07.198 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:20:27.884 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:20:27.897 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:20:36.197 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3322 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:20:36.207 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:20:38.691 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:20:38.693 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:20:38.694 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:20:38.820 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:20:40.025 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:20:40.458 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:20:40.496 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:20:40.535 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:20:40.772 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:20:40.802 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.044 seconds (JVM running for 6.774)
-2019-12-25 21:20:56.163 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:21:02.632 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:21:02.687 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:21:03.130 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:22:36.772 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:22:36.788 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:22:46.545 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3348 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:22:46.562 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:22:48.590 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:22:48.591 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:22:48.592 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:22:48.722 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:22:49.920 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:22:50.335 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:22:50.380 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:22:50.414 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:22:50.660 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:22:50.688 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.856 seconds (JVM running for 6.578)
-2019-12-25 21:23:04.578 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:23:27.190 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:23:27.234 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:23:27.731 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:23:27.802 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 608 毫秒 ======
-
-2019-12-25 21:23:27.805 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:23:27.866 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 61 毫秒 ======
-
-2019-12-25 21:23:27.867 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:23:27.877 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 21:23:27.878 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:23:27.889 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 21:23:37.042 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:29:39.487 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:29:39.503 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:29:54.131 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3368 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:29:54.145 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:29:56.317 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:29:56.319 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:29:56.320 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:29:56.460 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:29:57.681 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:29:58.126 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:29:58.170 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:29:58.205 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:29:58.448 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:29:58.477 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.998 seconds (JVM running for 6.571)
-2019-12-25 21:30:10.248 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:30:20.625 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:20.679 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:30:21.181 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:30:21.251 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 620 毫秒 ======
-
-2019-12-25 21:30:27.012 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 21:30:27.012 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 21:30:27.133 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAll 服务】结束，用时 121 毫秒 ======
-
-2019-12-25 21:30:27.134 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAll 服务】结束，用时 122 毫秒 ======
-
-2019-12-25 21:30:27.256 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:01.619 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:30:27.288 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 29 毫秒 ======
+2019-12-26 19:46:01.630 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 10 毫秒 ======
 
-2019-12-25 21:30:27.763 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:01.651 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:30:27.777 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 14 毫秒 ======
+2019-12-26 19:46:01.678 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 26 毫秒 ======
 
-2019-12-25 21:30:28.940 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:03.010 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:03.028 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:30:28.945 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:03.040 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:28.985 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 38 毫秒 ======
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
+2019-12-26 19:46:03.109 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 81 毫秒 ======
 
-2019-12-25 21:30:29.021 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 80 毫秒 ======
-
-2019-12-25 21:30:29.024 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:03.111 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:30:29.036 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 12 毫秒 ======
+2019-12-26 19:46:03.118 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 77 毫秒 ======
 
-2019-12-25 21:30:29.038 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:03.120 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 94 毫秒 ======
+
+2019-12-26 19:46:03.122 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 10 毫秒 ======
+
+2019-12-26 19:46:03.123 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:30:29.073 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 33 毫秒 ======
+2019-12-26 19:46:03.160 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 37 毫秒 ======
 
-2019-12-25 21:30:29.081 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:03.162 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:30:29.096 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 13 毫秒 ======
+2019-12-26 19:46:03.221 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 59 毫秒 ======
 
-2019-12-25 21:30:40.476 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:06.521 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:30:40.479 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:06.527 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
+2019-12-26 19:46:06.528 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:40.504 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 24 毫秒 ======
-
-2019-12-25 21:30:40.507 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 31 毫秒 ======
-
-2019-12-25 21:30:40.509 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:30:40.561 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 48 毫秒 ======
-
-2019-12-25 21:30:40.565 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:30:40.578 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 12 毫秒 ======
-
-2019-12-25 21:30:40.581 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:30:40.592 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 9 毫秒 ======
-
-2019-12-25 21:30:52.296 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:52.303 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:30:53.036 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:53.046 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+2019-12-26 19:46:06.531 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
 ======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 9 毫秒 ======
 
-2019-12-25 21:30:53.776 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:53.782 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:30:55.509 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:30:55.513 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 4 毫秒 ======
-
-2019-12-25 21:32:45.163 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:32:45.172 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:32:46.197 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:32:46.200 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 3 毫秒 ======
-
-2019-12-25 21:40:02.503 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:40:02.518 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:40:12.723 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3400 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:40:12.735 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:40:14.974 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:40:14.975 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:40:14.977 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:40:15.099 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:40:16.305 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:40:16.745 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:40:16.781 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:40:16.819 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:40:17.057 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:40:17.086 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.778 seconds (JVM running for 6.386)
-2019-12-25 21:40:35.898 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:40:42.751 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:40:42.827 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:40:43.303 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:40:43.380 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 625 毫秒 ======
-
-2019-12-25 21:42:33.307 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:42:33.324 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:42:43.415 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3420 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:42:43.440 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:42:45.757 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:42:45.758 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:42:45.759 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:42:45.882 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:42:47.116 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:42:47.541 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:42:47.583 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:42:47.630 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:42:47.874 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:42:47.901 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.049 seconds (JVM running for 6.761)
-2019-12-25 21:42:58.089 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:43:07.943 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:43:08.023 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:43:08.475 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:43:08.552 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 605 毫秒 ======
-
-2019-12-25 21:43:11.798 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:43:11.809 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 21:43:20.669 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:43:20.692 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 21 毫秒 ======
-
-2019-12-25 21:43:29.332 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:43:29.340 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 21:47:24.572 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:47:24.587 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:47:32.984 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3440 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:47:32.998 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:47:35.354 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:47:35.356 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:47:35.357 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:47:35.479 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:47:36.725 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:47:37.176 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:47:37.215 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:47:37.266 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:47:37.514 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:47:37.545 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.025 seconds (JVM running for 6.816)
-2019-12-25 21:47:47.507 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:47:55.618 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:47:55.704 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:47:56.245 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:47:56.323 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 700 毫秒 ======
-
-2019-12-25 21:48:02.707 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:48:02.722 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:50:29.396 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:50:29.408 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:50:40.269 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3457 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:50:40.285 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:50:42.480 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:50:42.481 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:50:42.482 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:50:42.603 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:50:43.823 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:50:44.308 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:50:44.349 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:50:44.389 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:50:44.640 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:50:44.669 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.063 seconds (JVM running for 6.763)
-2019-12-25 21:50:58.950 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:51:15.945 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:51:16.038 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:51:16.489 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:51:16.551 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 602 毫秒 ======
-
-2019-12-25 21:51:21.178 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:51:21.196 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 21:52:45.308 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:45.327 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:52:45.343 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 29 毫秒 ======
-
-2019-12-25 21:52:45.374 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 45 毫秒 ======
-
-2019-12-25 21:52:45.377 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:06.532 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:52:45.422 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 44 毫秒 ======
-
-2019-12-25 21:52:45.422 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:52:45.434 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 21:52:45.435 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:52:45.444 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 21:52:49.599 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:49.607 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 21:52:50.346 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:50.353 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:52:50.536 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:50.542 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:52:51.156 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:51.163 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:52:51.328 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:51.334 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 5 毫秒 ======
-
-2019-12-25 21:52:51.912 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:52:51.921 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 21:54:16.364 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:54:16.378 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:54:27.332 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3466 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:54:27.344 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:54:29.706 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:54:29.708 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:54:29.709 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:54:29.829 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:54:31.058 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:54:31.480 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:54:31.526 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:54:31.565 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:54:31.800 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:54:31.830 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.918 seconds (JVM running for 6.734)
-2019-12-25 21:55:34.886 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:55:44.792 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:55:44.868 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:55:45.325 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:55:45.391 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 595 毫秒 ======
-
-2019-12-25 21:56:46.304 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 21:56:46.312 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 21:56:56.248 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3479 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 21:56:56.267 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 21:56:58.785 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:56:58.787 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 21:56:58.788 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 21:56:58.908 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 21:57:00.140 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 21:57:00.582 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 21:57:00.622 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 21:57:00.660 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 21:57:00.902 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 21:57:00.941 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.289 seconds (JVM running for 6.946)
-2019-12-25 21:57:08.463 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 21:57:13.779 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:57:13.851 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 21:57:14.347 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 21:57:14.418 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 634 毫秒 ======
-
-2019-12-25 21:57:34.908 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 21:57:34.908 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 21:57:34.997 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 88 毫秒 ======
-
-2019-12-25 21:57:34.996 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 86 毫秒 ======
-
-2019-12-25 21:57:35.102 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:57:35.117 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:57:35.979 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:35.989 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 9 毫秒 ======
-
-2019-12-25 21:57:36.031 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.037 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.051 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 12 毫秒 ======
-
-2019-12-25 21:57:36.051 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 18 毫秒 ======
-
-2019-12-25 21:57:36.349 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.362 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:57:36.371 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.387 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 21:57:36.403 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.424 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 21:57:36.635 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.649 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:57:36.665 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.673 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:57:36.685 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 21:57:36.699 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 12 毫秒 ======
-
-2019-12-25 21:57:39.339 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:57:39.340 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:57:39.366 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 23 毫秒 ======
-
-2019-12-25 21:57:39.386 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 45 毫秒 ======
-
-2019-12-25 21:57:39.390 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:57:39.409 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 19 毫秒 ======
-
-2019-12-25 21:57:39.410 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:57:39.440 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 30 毫秒 ======
-
-2019-12-25 21:57:39.441 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:57:39.456 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 21:57:43.542 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:57:43.559 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 16 毫秒 ======
-
-2019-12-25 21:57:43.559 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:57:43.560 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:57:43.575 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 21:57:43.576 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:57:43.586 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 25 毫秒 ======
-
-2019-12-25 21:57:43.591 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 14 毫秒 ======
-
-2019-12-25 21:57:43.593 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:57:43.600 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 21:57:47.299 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:57:47.304 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 4 毫秒 ======
-
-2019-12-25 21:57:47.827 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:57:47.835 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 21:58:05.896 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 21:58:05.913 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 21:58:05.928 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 27 毫秒 ======
-
-2019-12-25 21:58:05.930 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 21:58:05.944 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 30 毫秒 ======
-
-2019-12-25 21:58:05.946 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 21:58:05.949 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 21:58:05.957 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 21:58:05.958 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 21:58:05.964 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 5 毫秒 ======
-
-2019-12-25 21:59:48.387 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:59:48.404 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 21:59:48.714 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:59:48.731 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 21:59:48.746 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 21:59:48.758 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 22:02:38.327 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:02:38.343 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:02:46.290 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3492 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:02:46.306 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:02:48.777 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:02:48.779 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:02:48.780 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:02:48.983 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:02:51.222 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:02:51.903 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:02:51.941 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:02:52.028 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:02:52.507 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:02:52.535 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 6.658 seconds (JVM running for 8.254)
-2019-12-25 22:03:05.994 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3499 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:03:06.010 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:03:07.671 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:03:07.672 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:03:07.673 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:03:07.747 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:03:08.807 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:03:09.145 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:03:09.160 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:03:09.186 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:03:09.406 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:03:09.431 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.019 seconds (JVM running for 5.64)
-2019-12-25 22:03:23.743 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:03:36.783 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:03:36.898 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:03:37.349 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:03:37.414 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 625 毫秒 ======
-
-2019-12-25 22:05:07.568 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:05:07.584 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:05:17.144 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3507 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:05:17.162 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:05:21.050 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:05:21.051 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:05:21.052 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:05:21.184 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:05:23.968 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:05:24.384 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:05:24.413 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:05:24.447 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:05:24.684 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:05:24.709 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 8.003 seconds (JVM running for 9.762)
-2019-12-25 22:05:36.187 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:05:42.659 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:05:42.738 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:05:43.199 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:05:43.271 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 608 毫秒 ======
-
-2019-12-25 22:05:55.686 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 22:05:55.686 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 22:05:55.808 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 121 毫秒 ======
-
-2019-12-25 22:05:55.808 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 120 毫秒 ======
-
-2019-12-25 22:05:55.943 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:05:55.959 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 22:05:56.733 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:05:56.752 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 18 毫秒 ======
-
-2019-12-25 22:05:56.768 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:05:56.787 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 16 毫秒 ======
-
-2019-12-25 22:05:58.096 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:05:58.097 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:05:58.127 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 30 毫秒 ======
-
-2019-12-25 22:05:58.181 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 83 毫秒 ======
-
-2019-12-25 22:05:58.183 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:05:58.196 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 22:05:58.197 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:05:58.221 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 23 毫秒 ======
-
-2019-12-25 22:05:58.222 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:05:58.240 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 16 毫秒 ======
-
-2019-12-25 22:06:01.201 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:06:01.207 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:01.208 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 22:06:01.209 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:06:01.220 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 9 毫秒 ======
-
-2019-12-25 22:06:01.221 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:06:01.233 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 22:06:01.234 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:06:01.242 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:06:01.257 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 48 毫秒 ======
-
-2019-12-25 22:06:05.820 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:05.828 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:06:06.409 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:06.416 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:06:06.898 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:06.903 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 5 毫秒 ======
-
-2019-12-25 22:06:07.314 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:07.319 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 4 毫秒 ======
-
-2019-12-25 22:06:22.527 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:06:22.534 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 5 毫秒 ======
-
-2019-12-25 22:08:44.633 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:08:44.651 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:09:01.611 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3535 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:09:01.623 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:09:03.606 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:09:03.607 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:09:03.608 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:09:03.701 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:09:04.860 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:09:05.270 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:09:05.297 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:09:05.331 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:09:05.551 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:09:05.577 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.462 seconds (JVM running for 6.263)
-2019-12-25 22:09:24.756 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:09:30.409 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:09:30.475 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:09:30.954 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:09:31.031 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 617 毫秒 ======
-
-2019-12-25 22:09:35.769 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 22:09:35.769 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 22:09:35.867 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 94 毫秒 ======
-
-2019-12-25 22:09:35.943 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 172 毫秒 ======
-
-2019-12-25 22:09:36.044 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:09:36.062 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 22:09:38.203 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:09:38.218 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 22:09:39.894 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:09:39.895 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:09:39.920 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 22:09:39.962 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 66 毫秒 ======
-
-2019-12-25 22:09:39.964 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:09:39.984 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 22:09:39.988 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:09:40.018 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 27 毫秒 ======
-
-2019-12-25 22:09:40.020 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:09:40.039 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 22:09:43.147 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:09:43.151 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:09:43.167 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 22:09:43.169 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:09:43.185 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 22:09:43.187 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:09:43.209 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 22:09:43.212 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:09:43.219 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 71 毫秒 ======
-
-2019-12-25 22:09:43.236 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 15 毫秒 ======
-
-2019-12-25 22:10:02.585 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:10:02.594 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
-
-2019-12-25 22:10:30.516 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:10:30.523 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:10:31.411 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:10:31.418 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:11:42.390 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:11:42.424 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:11:42.443 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 44 毫秒 ======
-
-2019-12-25 22:11:42.445 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 18 毫秒 ======
-
-2019-12-25 22:11:42.446 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:11:42.458 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 22:11:42.460 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:11:42.467 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 7 毫秒 ======
-
-2019-12-25 22:11:42.468 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:11:42.474 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 5 毫秒 ======
-
-2019-12-25 22:43:23.682 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:43:23.702 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:43:35.233 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3615 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:43:35.245 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:43:37.435 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:43:37.436 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:43:37.437 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:43:37.549 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:43:38.721 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:43:39.134 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:43:39.162 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:43:39.196 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:43:39.445 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:43:39.475 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.662 seconds (JVM running for 6.458)
-2019-12-25 22:43:52.355 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:44:01.569 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:44:01.674 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:44:02.150 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:47:05.644 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:47:05.662 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:47:17.041 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3638 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:47:17.054 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:47:19.109 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:47:19.111 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:47:19.112 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:47:19.211 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:47:20.477 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:47:20.906 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:47:20.933 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:47:20.967 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:47:21.193 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:47:21.219 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.722 seconds (JVM running for 6.699)
-2019-12-25 22:47:24.670 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:47:31.646 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:47:31.737 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:47:32.216 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:48:04.840 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:48:07.745 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:54:55.789 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:54:55.804 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:55:04.937 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3663 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:55:04.956 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:55:06.981 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:55:06.982 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:55:06.983 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:55:07.084 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:55:08.294 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:55:08.709 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:55:08.736 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:55:08.777 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:55:09.005 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:55:09.042 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.672 seconds (JVM running for 6.298)
-2019-12-25 22:55:16.354 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 22:55:27.910 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:27.990 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 22:55:28.456 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 22:55:28.541 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 626 毫秒 ======
-
-2019-12-25 22:55:28.545 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:28.548 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 2 毫秒 ======
-
-2019-12-25 22:55:28.549 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:28.553 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 3 毫秒 ======
-
-2019-12-25 22:55:42.879 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 22:55:42.885 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 22:55:42.925 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 39 毫秒 ======
-
-2019-12-25 22:55:42.944 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllRootLevelCat 服务】结束，用时 63 毫秒 ======
-
-2019-12-25 22:55:43.063 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 22:55:43.083 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 17 毫秒 ======
-
-2019-12-25 22:55:53.723 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 22:55:53.731 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:55:53.763 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 39 毫秒 ======
-
-2019-12-25 22:55:53.765 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 22:55:53.767 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 36 毫秒 ======
-
-2019-12-25 22:55:53.763 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:53.779 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 22:55:53.779 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 14 毫秒 ======
-
-2019-12-25 22:55:53.780 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:53.781 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 22:55:53.800 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 19 毫秒 ======
-
-2019-12-25 22:55:53.802 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 22:55:53.813 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 22:55:53.819 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 38 毫秒 ======
-
-2019-12-25 22:55:53.822 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 22:55:53.836 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 22:55:58.302 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:55:58.316 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 22:55:59.289 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 22:55:59.300 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 10 毫秒 ======
-
-2019-12-25 22:59:10.897 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 22:59:10.907 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
-2019-12-25 22:59:20.577 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 3686 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
-2019-12-25 22:59:20.606 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
-2019-12-25 22:59:22.879 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:59:22.881 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
-2019-12-25 22:59:22.882 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-12-25 22:59:22.978 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
-2019-12-25 22:59:24.183 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2019-12-25 22:59:24.823 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
-2019-12-25 22:59:24.915 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
-2019-12-25 22:59:24.966 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
-2019-12-25 22:59:25.266 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
-2019-12-25 22:59:25.330 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 5.132 seconds (JVM running for 6.797)
-2019-12-25 23:00:12.603 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-25 23:00:17.001 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 23:00:17.093 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
-2019-12-25 23:00:17.567 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
-2019-12-25 23:00:17.646 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 640 毫秒 ======
-
-2019-12-25 23:00:21.399 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllRootLevelCat 服务】开始 ======
-2019-12-25 23:00:21.407 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CarouselServiceImpl ￿的 queryAll 服务】开始 ======
-2019-12-25 23:00:21.443 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 36 毫秒 ======
-
-2019-12-25 23:00:21.450 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CarouselServiceImpl 的 queryAll 服务】结束，用时 49 毫秒 ======
-
-2019-12-25 23:00:21.706 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 23:00:21.730 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 22 毫秒 ======
-
-2019-12-25 23:00:22.229 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 23:00:22.242 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 12 毫秒 ======
-
-2019-12-25 23:00:22.531 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 queryAllCatIn 服务】开始 ======
-2019-12-25 23:00:22.552 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 queryAllCatIn 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 23:00:22.945 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CategoryServiceImpl ￿的 getSixNewItems 服务】开始 ======
-2019-12-25 23:00:22.957 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CategoryServiceImpl 的 getSixNewItems 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 23:00:24.736 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 23:00:24.738 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 23:00:24.743 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 23:00:24.773 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 35 毫秒 ======
-
-2019-12-25 23:00:24.805 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 59 毫秒 ======
-
-2019-12-25 23:00:24.824 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 23:00:24.846 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 21 毫秒 ======
-
-2019-12-25 23:00:24.848 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 23:00:24.876 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 133 毫秒 ======
-
-2019-12-25 23:00:24.878 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 29 毫秒 ======
-
-2019-12-25 23:00:24.882 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 23:00:24.893 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 11 毫秒 ======
-
-2019-12-25 23:00:27.308 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 23:00:27.310 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 23:00:27.319 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 23:00:27.328 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 19 毫秒 ======
-
-2019-12-25 23:00:27.330 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 23:00:27.337 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+2019-12-26 19:46:06.552 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
 ======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 18 毫秒 ======
 
-2019-12-25 23:00:27.343 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 13 毫秒 ======
-
-2019-12-25 23:00:27.344 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:06.553 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 23:00:27.356 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 10 毫秒 ======
+2019-12-26 19:46:06.559 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 31 毫秒 ======
 
-2019-12-25 23:00:27.357 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:06.569 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 40 毫秒 ======
+
+2019-12-26 19:46:06.579 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 26 毫秒 ======
+
+2019-12-26 19:46:06.581 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 23:00:27.364 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 41 毫秒 ======
+2019-12-26 19:46:06.598 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 16 毫秒 ======
 
-2019-12-25 23:00:36.144 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
-2019-12-25 23:00:36.149 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:13.342 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 23:00:36.151 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:46:13.364 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 21 毫秒 ======
+
+2019-12-26 19:46:15.338 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:15.356 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 16 毫秒 ======
+
+2019-12-26 19:46:16.672 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:16.682 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:17.701 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:17.710 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 9 毫秒 ======
+
+2019-12-26 19:46:20.116 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:20.125 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:21.362 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:21.371 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:22.649 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:22.657 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:23.545 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:23.554 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:24.091 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:24.100 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 8 毫秒 ======
+
+2019-12-26 19:46:33.255 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:33.281 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 25 毫秒 ======
+
+2019-12-26 19:46:37.730 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:46:37.736 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
+
+2019-12-26 19:48:25.154 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
+2019-12-26 19:48:25.175 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.
+2019-12-26 19:48:31.858 [INFO ] org.springframework.boot.StartupInfoLogger.logStarting[55 line] - Starting Application on DavisdeMacBook-Air.local with PID 865 (/Users/jasmine/IdeaProjects/online_store/ols-api/target/classes started by jasmine in /Users/jasmine/IdeaProjects/online_store)
+2019-12-26 19:48:31.868 [INFO ] org.springframework.boot.SpringApplication.logStartupProfileInfo[651 line] - No active profile set, falling back to default profiles: default
+2019-12-26 19:48:34.238 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing ProtocolHandler ["http-nio-8088"]
+2019-12-26 19:48:34.239 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting service [Tomcat]
+2019-12-26 19:48:34.241 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-26 19:48:34.368 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring embedded WebApplicationContext
+2019-12-26 19:48:35.571 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods[69 line] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-26 19:48:36.097 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[160 line] - Context refreshed
+2019-12-26 19:48:36.120 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start[163 line] - Found 1 custom documentation plugin(s)
+2019-12-26 19:48:36.149 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan[41 line] - Scanning for api listing references
+2019-12-26 19:48:36.403 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Starting ProtocolHandler ["http-nio-8088"]
+2019-12-26 19:48:36.432 [INFO ] org.springframework.boot.StartupInfoLogger.logStarted[61 line] - Started Application in 4.991 seconds (JVM running for 6.912)
+2019-12-26 19:48:59.600 [INFO ] org.apache.juli.logging.DirectJDKLog.log[173 line] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-26 19:48:59.667 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:48:59.750 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[110 line] - DateSourceHikariCP - Starting...
+2019-12-26 19:49:00.223 [INFO ] com.zaxxer.hikari.HikariDataSource.getConnection[123 line] - DateSourceHikariCP - Start completed.
+2019-12-26 19:49:00.302 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 633 毫秒 ======
+
+2019-12-26 19:49:08.572 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+
+======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
+2019-12-26 19:49:08.577 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getCounts 服务】开始 ======
-2019-12-25 23:00:36.154 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getCounts 服务】结束，用时 9 毫秒 ======
+2019-12-26 19:49:08.587 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
-2019-12-25 23:00:36.155 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemById 服务】开始 ======
+2019-12-26 19:49:08.639 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemById 服务】结束，用时 51 毫秒 ======
+
+2019-12-26 19:49:08.641 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemImgByItemId 服务】开始 ======
-2019-12-25 23:00:36.165 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 10 毫秒 ======
+2019-12-26 19:49:08.648 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 69 毫秒 ======
 
-2019-12-25 23:00:36.166 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:49:08.678 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemImgByItemId 服务】结束，用时 37 毫秒 ======
+
+2019-12-26 19:49:08.680 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemSpecByItemId 服务】开始 ======
-2019-12-25 23:00:36.175 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+2019-12-26 19:49:08.692 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 110 毫秒 ======
+
+2019-12-26 19:49:08.708 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
 ======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 24 毫秒 ======
 
-2019-12-25 23:00:36.187 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemSpecByItemId 服务】结束，用时 20 毫秒 ======
-
-2019-12-25 23:00:36.188 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:49:08.710 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.ItemServiceImpl ￿的 queryItemParamByItemId 服务】开始 ======
-2019-12-25 23:00:36.208 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 11 毫秒 ======
+2019-12-26 19:49:08.726 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 15 毫秒 ======
 
-2019-12-25 23:00:36.214 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.ItemServiceImpl 的 queryItemParamByItemId 服务】结束，用时 62 毫秒 ======
-
-2019-12-25 23:00:40.523 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
+2019-12-26 19:49:16.154 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
 
 ======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 23:00:40.530 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
+2019-12-26 19:49:16.179 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
+======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 24 毫秒 ======
 
-2019-12-25 23:00:41.068 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[27 line] - 
-
-======【pers.dc.ols.service.impl.CommentServiceImpl ￿的 getComments 服务】开始 ======
-2019-12-25 23:00:41.075 [INFO ] pers.dc.ols.aspect.ServiceLogAspect.recordTimeLog[38 line] - 
-======【pers.dc.ols.service.impl.CommentServiceImpl 的 getComments 服务】结束，用时 6 毫秒 ======
-
-2019-12-25 23:00:47.076 [INFO ] com.zaxxer.hikari.HikariDataSource.close[350 line] - DateSourceHikariCP - Shutdown initiated...
-2019-12-25 23:00:47.087 [INFO ] com.zaxxer.hikari.HikariDataSource.close[352 line] - DateSourceHikariCP - Shutdown completed.

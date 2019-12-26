@@ -1,5 +1,7 @@
 package pers.dc.ols.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,6 +11,7 @@ import pers.dc.ols.pojo.ItemCommentExample;
 import pers.dc.ols.pojo.vo.CommentRecordVO;
 import pers.dc.ols.pojo.vo.CountsVO;
 import pers.dc.ols.service.CommentService;
+import pers.dc.ols.utils.PagedGridResult;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -21,8 +24,16 @@ public class CommentServiceImpl implements CommentService {
 
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
-    public List<CommentRecordVO> getComments(String itemId, String level, Integer from, Integer to) {
-        return customCommentMapper.getComments(itemId, level, from, to);
+    public PagedGridResult getComments(String itemId, String level, Integer page, Integer pageSize) {
+        PageHelper.startPage(page, pageSize);
+        List<CommentRecordVO> comments = customCommentMapper.getComments(itemId, level);
+        PageInfo<?> pageList = new PageInfo<>(comments);
+        PagedGridResult result = new PagedGridResult();
+        result.setPage(page);
+        result.setRows(comments);
+        result.setTotal(pageList.getPages());
+        result.setRecords(pageList.getTotal());
+        return result;
     }
 
     @Transactional(propagation = Propagation.SUPPORTS)

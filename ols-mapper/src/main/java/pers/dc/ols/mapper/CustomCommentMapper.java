@@ -6,5 +6,5 @@ import pers.dc.ols.pojo.vo.CountsVO;
 import java.util.List;
 
 public interface CustomCommentMapper {
-    List<CommentRecordVO> getComments(String itemId, String level, Integer from, Integer to);
+    List<CommentRecordVO> getComments(String itemId, String level);
 }

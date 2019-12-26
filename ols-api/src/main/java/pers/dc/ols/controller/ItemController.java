@@ -49,13 +49,7 @@ public class ItemController {
                                    @RequestParam(value = "level", required = false) String level,
                                    @RequestParam(value = "page", required = false) Integer page,
                                    @RequestParam(value = "pageSize", required = false) Integer pageSize) {
-        Integer from = null, to = null;
-        if (page != null) {
-            from = (page-1)*pageSize;
-            to = from + pageSize;
-        }
-        List<CommentRecordVO> comments = commentService.getComments(itemId, level, from, to);
-        return JSONResult.ok(comments);
+        return JSONResult.ok(commentService.getComments(itemId, level, page, pageSize));
     }
 
     @ApiOperation("获取商品各评级个数")

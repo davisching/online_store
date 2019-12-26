@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="pers.dc.ols.mapper.CustomCommentMapper">
     <resultMap id="commentVO" type="pers.dc.ols.pojo.vo.CommentRecordVO">
-        <result column="face" property="userFace"/>
+        <result column="userFace" property="userFace"/>
         <result column="nickname" property="nickname"/>
-        <result column="created_time" property="createdTime"/>
+        <result column="createdTime" property="createdTime"/>
         <result column="content" property="content"/>
-        <result column="spec_name" property="specName"/>
+        <result column="specName" property="specName"/>
     </resultMap>
     <select id="getComments" resultMap="commentVO">
         SELECT
@@ -23,8 +23,5 @@
               AND c.comment_level = #{level}
           </if>
         ORDER BY c.created_time DESC
-        <if test="from != null">
-            LIMIT #{from}, #{to}
-        </if>
     </select>
 </mapper>

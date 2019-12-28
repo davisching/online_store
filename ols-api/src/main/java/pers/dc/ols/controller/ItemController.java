@@ -73,4 +73,16 @@ public class ItemController {
         if (pageSize == null) pageSize = 20;
         return JSONResult.ok(searchService.getSearchResults(keywords, sort, page, pageSize));
     }
+
+    @ApiOperation("商品搜索（通过商品分类）")
+    @GetMapping("/catItems")
+    public JSONResult searchByCatId( @RequestParam("catId") String catId,
+                              @RequestParam(value = "sort", required = false) String sort,
+                              @RequestParam(value = "page", required = false) Integer page,
+                              @RequestParam(value = "pageSize", required = false) Integer pageSize) {
+        if (sort == null) sort = "k";
+        if (page == null) page = 1;
+        if (pageSize == null) pageSize = 20;
+        return JSONResult.ok(searchService.getSearchResultsByCatId(catId, sort, page, pageSize));
+    }
 }

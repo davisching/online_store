@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface SearchService {
     PagedGridResult getSearchResults(String keywords, String sort, Integer page, Integer pageSize);
+    PagedGridResult getSearchResultsByCatId(String catId, String sort, Integer page, Integer pageSize);
 }

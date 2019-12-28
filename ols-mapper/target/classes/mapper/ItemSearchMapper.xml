@@ -42,4 +42,39 @@
             <otherwise/>
         </choose>
     </select>
+
+    <select id="getSearchResultsByCatId" resultMap="itemSearchVO">
+        select
+        i.id as itemId,
+        img.url as imgUrl,
+        i.item_name as itemName,
+        i.sell_counts as sellCounts,
+        tempSpec.price_discount as price
+        from items i
+        left join items_img img
+        on i.id = img.item_id
+        and img.is_main = 1
+        left join
+        (
+        select
+        item_id,
+        min(discounts*price_discount) as price_discount
+        from items_spec
+        group by item_id
+        ) tempSpec
+        on i.id = tempSpec.item_id
+        where i.cat_id = #{catId}
+        <choose>
+            <when test='sort == "k"'>
+                order by i.updated_time desc
+            </when>
+            <when test='sort == "c"'>
+                order by sellCounts desc
+            </when>
+            <when test='sort == "p"'>
+                order by price
+            </when>
+            <otherwise/>
+        </choose>
+    </select>
 </mapper>

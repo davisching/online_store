@@ -8,4 +8,5 @@ import java.util.List;
 public interface AddressService {
     List<UserAddress> queryAddressByUserId(String userId);
     void addAddress(AddressBO addressBO);
+    void updateAddress(AddressBO addressBO);
 }

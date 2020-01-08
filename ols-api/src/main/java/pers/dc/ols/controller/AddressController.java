@@ -32,10 +32,28 @@ public class AddressController {
     @ApiOperation("添加用户地址")
     @PostMapping("/add")
     public JSONResult add (@RequestBody AddressBO addressBO) {
-        return checkAddressAndAdd(addressBO);
+
+        JSONResult result = checkAddress(addressBO);
+
+        if (result.isOK())
+            addressService.addAddress(addressBO);
+
+        return result;
     }
 
-    private JSONResult checkAddressAndAdd(AddressBO addressBO) {
+    @ApiOperation("修改用户地址")
+    @PostMapping("/update")
+    public JSONResult update (@RequestBody AddressBO addressBO) {
+
+        JSONResult result = checkAddress(addressBO);
+
+        if (result.isOK())
+            addressService.updateAddress(addressBO);
+
+        return result;
+    }
+
+    private JSONResult checkAddress(AddressBO addressBO) {
         String receiver = addressBO.getReceiver();
         if (StringUtils.isBlank(receiver))
             return JSONResult.errorMsg("收货人不能为空");
@@ -50,13 +68,14 @@ public class AddressController {
         if (!MobileEmailUtils.checkMobileIsOk(mobile))
             return JSONResult.errorMsg("手机格式不正确");
 
-        if (addressBO.getCity().isEmpty()
-                || addressBO.getProvince().isEmpty()
-                || addressBO.getDistrict().isEmpty()
-                || addressBO.getDetail().isEmpty())
-            return JSONResult.errorMsg("地址不能为空");
+//        if (addressBO.getCity().isEmpty()
+//                || addressBO.getProvince().isEmpty()
+//                || addressBO.getDistrict().isEmpty()
+//                || addressBO.getDetail().isEmpty())
+//            return JSONResult.errorMsg("地址不能为空");
 
-        addressService.addAddress(addressBO);
+        if (addressBO.getDetail().isEmpty())
+            return JSONResult.errorMsg("地址不能为空");
 
         return JSONResult.ok();
     }

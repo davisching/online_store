@@ -34,7 +34,7 @@ public class AddressServiceImpl implements AddressService {
         return userAddressMapper.selectByExample(example);
     }
 
-    @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional
     @Override
     public void addAddress(AddressBO addressBO) {
         Integer isDefault = (queryAddressByUserId(addressBO.getUserId()).isEmpty()) ? 1 : 0;
@@ -45,5 +45,17 @@ public class AddressServiceImpl implements AddressService {
         userAddress.setCreatedTime(new Date());
         userAddress.setUpdatedTime(new Date());
         userAddressMapper.insert(userAddress);
+    }
+
+    @Transactional
+    @Override
+    public void updateAddress(AddressBO addressBO) {
+        UserAddress userAddress = new UserAddress();
+        BeanUtils.copyProperties(addressBO, userAddress);
+
+        userAddress.setUpdatedTime(new Date());
+        userAddress.setId(addressBO.getAddressId());
+
+        userAddressMapper.updateByPrimaryKeySelective(userAddress);
     }
 }

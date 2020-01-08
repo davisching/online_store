@@ -37,6 +37,8 @@ public class PassportController {
         return JSONResult.ok();
     }
 
+    // TODO 1。 生成用户token，存入redis会话；2。 同步购物车数据
+
     @ApiOperation(value = "用户注册", notes = "用于用户注册")
     @PostMapping("/register")
     public JSONResult register(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) {

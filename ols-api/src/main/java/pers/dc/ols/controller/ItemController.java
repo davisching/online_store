@@ -85,4 +85,12 @@ public class ItemController {
         if (pageSize == null) pageSize = 20;
         return JSONResult.ok(searchService.getSearchResultsByCatId(catId, sort, page, pageSize));
     }
+
+    @ApiOperation("根据商品规格id查询商品数据")
+    @GetMapping("/refresh")
+    public JSONResult refresh(@RequestParam(required = false) String itemSpecIds) {
+        if (StringUtils.isBlank(itemSpecIds))
+            return JSONResult.ok();
+        return JSONResult.ok(itemService.queryItemsBySpecId(itemSpecIds));
+    }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.dc.ols.mapper.ItemMapperCustom">
+    <resultMap id="shopcartItemVO" type="pers.dc.ols.pojo.bo.ShopCartItemBO">
+        <result column="itemId" property="itemId"/>
+        <result column="itemImgUrl" property="itemImgUrl"/>
+        <result column="itemName" property="itemName"/>
+        <result column="specId" property="specId"/>
+        <result column="specName" property="specName"/>
+        <result column="priceDiscount" property="priceDiscount"/>
+        <result column="priceNormal" property="priceNormal"/>
+    </resultMap>
+    <select id="queryItemsBySpecId" parameterType="List" resultType="pers.dc.ols.pojo.vo.ShopCartItemVO">
+        select
+            i.id as itemId,
+            i.item_name as itemName,
+            img.url as itemImgUrl,
+            spec.id as specId,
+            spec.name as specName,
+            spec.price_discount as priceDiscount,
+            spec.price_normal as priceNormal
+        from
+            items_spec spec
+                join
+            items i
+            on
+                spec.item_id = i.id
+                join
+            items_img img
+            on
+                img.item_id = i.id
+        where
+            img.is_main = 1
+          and
+            spec.id
+                in
+            <foreach collection="specIds" index="idx" item="specId" open="(" separator="," close=")">
+                #{specId}
+            </foreach>
+    </select>
+</mapper>

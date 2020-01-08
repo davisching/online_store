@@ -3,14 +3,13 @@ package pers.dc.ols.service.impl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import pers.dc.ols.mapper.ItemImgMapper;
-import pers.dc.ols.mapper.ItemMapper;
-import pers.dc.ols.mapper.ItemParamMapper;
-import pers.dc.ols.mapper.ItemSpecMapper;
+import pers.dc.ols.mapper.*;
 import pers.dc.ols.pojo.*;
+import pers.dc.ols.pojo.vo.ShopCartItemVO;
 import pers.dc.ols.service.ItemService;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -20,6 +19,7 @@ public class ItemServiceImpl implements ItemService {
     @Resource ItemImgMapper itemImgMapper;
     @Resource ItemSpecMapper itemSpecMapper;
     @Resource ItemParamMapper itemParamMapper;
+    @Resource ItemMapperCustom itemMapperCustom;
 
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
@@ -53,5 +53,12 @@ public class ItemServiceImpl implements ItemService {
         ic.andItemIdEqualTo(itemId);
         List<ItemParam> list = itemParamMapper.selectByExample(ie);
         return list != null ? list.get(0) : null;
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<ShopCartItemVO> queryItemsBySpecId(String specIds) {
+        String[] ids = specIds.split(",");
+        return itemMapperCustom.queryItemsBySpecId(Arrays.asList(ids));
     }
 }

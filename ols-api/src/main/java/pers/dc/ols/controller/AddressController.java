@@ -8,6 +8,7 @@ import pers.dc.ols.pojo.UserAddress;
 import pers.dc.ols.pojo.bo.AddressBO;
 import pers.dc.ols.service.AddressService;
 import pers.dc.ols.utils.JSONResult;
+import pers.dc.ols.utils.MobileEmailUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -31,9 +32,33 @@ public class AddressController {
     @ApiOperation("添加用户地址")
     @PostMapping("/add")
     public JSONResult add (@RequestBody AddressBO addressBO) {
-        if (addressBO == null)
-            return JSONResult.errorMsg("");
+        return checkAddressAndAdd(addressBO);
+    }
+
+    private JSONResult checkAddressAndAdd(AddressBO addressBO) {
+        String receiver = addressBO.getReceiver();
+        if (StringUtils.isBlank(receiver))
+            return JSONResult.errorMsg("收货人不能为空");
+        if (receiver.length() > 12)
+            return JSONResult.errorMsg("收货人名称不能太长");
+
+        String mobile = addressBO.getMobile();
+        if (StringUtils.isBlank(mobile))
+            return JSONResult.errorMsg("手机号不能为空");
+        if (mobile.length() != 11)
+            return JSONResult.errorMsg("手机号长度不正确");
+        if (!MobileEmailUtils.checkMobileIsOk(mobile))
+            return JSONResult.errorMsg("手机格式不正确");
+
+        if (addressBO.getCity().isEmpty()
+                || addressBO.getProvince().isEmpty()
+                || addressBO.getDistrict().isEmpty()
+                || addressBO.getDetail().isEmpty())
+            return JSONResult.errorMsg("地址不能为空");
+
         addressService.addAddress(addressBO);
+
         return JSONResult.ok();
     }
+
 }

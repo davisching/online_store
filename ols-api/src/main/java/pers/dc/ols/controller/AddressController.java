@@ -53,6 +53,22 @@ public class AddressController {
         return result;
     }
 
+    @ApiOperation("删除用户地址")
+    @PostMapping("/delete")
+    public JSONResult delete (@RequestParam String userId, @RequestParam String addressId) {
+        if (!addressService.deleteAddress(userId, addressId))
+            return JSONResult.errorMsg("删除失败");
+        return JSONResult.ok();
+    }
+
+    @ApiOperation("设置默认地址")
+    @PostMapping("/setDefault")
+    public JSONResult setDefault (@RequestParam String userId, @RequestParam String addressId) {
+        if (!addressService.setDefault(userId, addressId))
+            return JSONResult.errorMsg("修改失败");
+        return JSONResult.ok();
+    }
+
     private JSONResult checkAddress(AddressBO addressBO) {
         String receiver = addressBO.getReceiver();
         if (StringUtils.isBlank(receiver))

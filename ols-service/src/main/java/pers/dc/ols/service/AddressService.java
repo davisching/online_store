@@ -9,4 +9,6 @@ public interface AddressService {
     List<UserAddress> queryAddressByUserId(String userId);
     void addAddress(AddressBO addressBO);
     void updateAddress(AddressBO addressBO);
+    boolean deleteAddress(String userId, String addressId);
+    boolean setDefault(String userId, String addressId);
 }

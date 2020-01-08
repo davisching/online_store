@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import pers.dc.ols.mapper.UserAddressMapper;
+import pers.dc.ols.pojo.User;
 import pers.dc.ols.pojo.UserAddress;
 import pers.dc.ols.pojo.UserAddressExample;
 import pers.dc.ols.pojo.bo.AddressBO;
@@ -57,5 +58,37 @@ public class AddressServiceImpl implements AddressService {
         userAddress.setId(addressBO.getAddressId());
 
         userAddressMapper.updateByPrimaryKeySelective(userAddress);
+    }
+
+    @Transactional
+    @Override
+    public boolean deleteAddress(String userId, String addressId) {
+        UserAddressExample example = new UserAddressExample();
+        UserAddressExample.Criteria criteria = example.createCriteria();
+        criteria.andUserIdEqualTo(userId);
+        criteria.andIdEqualTo(addressId);
+        userAddressMapper.deleteByExample(example);
+        return true;
+    }
+
+    @Override
+    public boolean setDefault(String userId, String addressId) {
+
+        UserAddressExample uae = new UserAddressExample();
+        UserAddressExample.Criteria criteria = uae.createCriteria();
+        criteria.andIsDefaultEqualTo(1);
+        List<UserAddress> formers = userAddressMapper.selectByExample(uae);
+        if (!formers.isEmpty()) {
+            UserAddress former = formers.get(0);
+            former.setIsDefault(0);
+            userAddressMapper.updateByPrimaryKey(former);
+        }
+
+        UserAddress userAddress = new UserAddress();
+        userAddress.setId(addressId);
+        userAddress.setUserId(userId);
+        userAddress.setIsDefault(1);
+        userAddressMapper.updateByPrimaryKeySelective(userAddress);
+        return true;
     }
 }

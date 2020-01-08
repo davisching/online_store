@@ -20,14 +20,33 @@ public class ShopCartController {
 
     @ApiOperation("添加商品至购物车")
     @PostMapping("/add")
-    public JSONResult add(@RequestParam("userId") String userId,
+    public JSONResult add(@RequestParam String userId,
                           @RequestBody ShopCartItemBO shopCartItemBO,
                           HttpServletRequest request, HttpServletResponse response) {
 
         if (StringUtils.isBlank(userId))
             return JSONResult.errorMsg("");
 
-        // TODO 需同步至后端redis缓存
+        // TODO 购物车 添加 需同步至后端redis缓存
+
+        System.out.println("现在添加 " + shopCartItemBO);
+
+        return JSONResult.ok();
+    }
+
+    @ApiOperation("从购物车删除商品")
+    @PostMapping("/del")
+    public JSONResult del(@RequestParam String userId,
+                          @RequestParam String itemSpecId,
+                          HttpServletRequest request, HttpServletResponse response) {
+
+        if (StringUtils.isBlank(userId))
+            return JSONResult.errorMsg("");
+
+        // TODO 购物车 删除 需同步至后端redis缓存
+        // TODO 购物车 删除 itemSpecId 有问题
+
+        System.out.println("现在删除 " + itemSpecId);
 
         return JSONResult.ok();
     }

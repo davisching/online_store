@@ -61,4 +61,22 @@ public class ItemServiceImpl implements ItemService {
         String[] ids = specIds.split(",");
         return itemMapperCustom.queryItemsBySpecId(Arrays.asList(ids));
     }
+
+    @Transactional
+    @Override
+    public void decreaseStock(String specId, Integer buyCounts) {
+
+//        ItemSpec itemSpec = itemSpecMapper.selectByPrimaryKey(specId);
+//        Integer curStock = itemSpec.getStock();
+//
+//        // TODO 将来会用 zookeeper 或 redis 进行 分布式锁 处理
+//
+//        if (curStock < buyCounts) {
+//
+//        }
+
+        int result = itemMapperCustom.decreaseStock(specId, buyCounts);
+        if (result != 1)
+            throw new RuntimeException("库存不足");
+    }
 }

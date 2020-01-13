@@ -14,4 +14,5 @@ public interface ItemService {
     List<ItemSpec> queryItemSpecByItemId(String itemId);
     ItemParam queryItemParamByItemId(String itemId);
     List<ShopCartItemVO> queryItemsBySpecId(String specIds);
+    void decreaseStock(String specId, Integer buyCounts);
 }

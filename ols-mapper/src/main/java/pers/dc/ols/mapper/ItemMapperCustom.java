@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface ItemMapperCustom {
     List<ShopCartItemVO> queryItemsBySpecId(@Param("specIds") List<String> specIds);
+    int decreaseStock(String specId, Integer buyCounts);
 }

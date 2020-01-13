@@ -30,7 +30,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     @Override
-    public void createOrder(OrderCreateBO orderCreateBO) {
+    public String createOrder(OrderCreateBO orderCreateBO) {
 
         String userId = orderCreateBO.getUserId();
         String addressId = orderCreateBO.getAddressId();
@@ -93,6 +93,8 @@ public class OrderServiceImpl implements OrderService {
         orderStatus.setOrderStatus(OrderStatusEnum.WAIT_PAY.type);
         orderStatus.setCreatedTime(new Date());
         orderStatusMapper.insert(orderStatus);
+
+        return orderId;
     }
 
     private String initAddress(UserAddress userAddress) {

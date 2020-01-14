@@ -2,12 +2,15 @@ package pers.dc.ols.service.impl;
 
 import org.n3r.idworker.Sid;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import pers.dc.ols.enums.OrderStatusEnum;
 import pers.dc.ols.enums.YesOrNo;
 import pers.dc.ols.mapper.*;
 import pers.dc.ols.pojo.*;
 import pers.dc.ols.pojo.bo.OrderCreateBO;
+import pers.dc.ols.pojo.vo.MerchantOrdersVO;
+import pers.dc.ols.pojo.vo.OrderVO;
 import pers.dc.ols.pojo.vo.ShopCartItemVO;
 import pers.dc.ols.service.ItemService;
 import pers.dc.ols.service.OrderService;
@@ -17,6 +20,8 @@ import java.util.Date;
 
 @Service
 public class OrderServiceImpl implements OrderService {
+
+    private final String RETURN_URL = "https://78b91c90.ngrok.io/ols/orders/notifyOrderPaid";
 
     @Resource private Sid sid;
 
@@ -30,14 +35,14 @@ public class OrderServiceImpl implements OrderService {
 
     @Transactional
     @Override
-    public String createOrder(OrderCreateBO orderCreateBO) {
+    public OrderVO createOrder(OrderCreateBO orderCreateBO) {
 
         String userId = orderCreateBO.getUserId();
         String addressId = orderCreateBO.getAddressId();
         String itemSpecIds = orderCreateBO.getItemSpecIds();
         Integer paymentMethod = orderCreateBO.getPayMethod();
         String leftMsg = orderCreateBO.getLeftMsg();
-        Integer postAmount = 0;
+        int postAmount = 0;
 
         UserAddress address =  userAddressMapper.selectByPrimaryKey(addressId);
 
@@ -45,8 +50,8 @@ public class OrderServiceImpl implements OrderService {
         String orderId = sid.nextShort();
 
         String[] specIds = itemSpecIds.split(",");
-        Integer totalAmount = 0;
-        Integer realPayAmount = 0;
+        int totalAmount = 0;
+        int realPayAmount = 0;
 
         for (String specId : specIds) {
             ItemSpec itemSpec = itemSpecMapper.selectByPrimaryKey(specId);
@@ -94,7 +99,18 @@ public class OrderServiceImpl implements OrderService {
         orderStatus.setCreatedTime(new Date());
         orderStatusMapper.insert(orderStatus);
 
-        return orderId;
+        MerchantOrdersVO merchantOrdersVO = new MerchantOrdersVO();
+        merchantOrdersVO.setMerchantOrderId(orderId);
+        merchantOrdersVO.setMerchantUserId(userId);
+        merchantOrdersVO.setAmount(realPayAmount + postAmount);
+        merchantOrdersVO.setPayMethod(paymentMethod);
+        merchantOrdersVO.setReturnUrl(RETURN_URL);
+
+        OrderVO orderVO = new OrderVO();
+        orderVO.setOrderId(orderId);
+        orderVO.setMerchantOrdersVO(merchantOrdersVO);
+
+        return orderVO;
     }
 
     private String initAddress(UserAddress userAddress) {
@@ -104,5 +120,21 @@ public class OrderServiceImpl implements OrderService {
                 .append(userAddress.getDistrict()).append(" ")
                 .append(userAddress.getDetail());
         return sb.toString();
+    }
+
+    @Transactional
+    @Override
+    public void updateOrderStatus(String orderId, Integer orderStatusNum) {
+        OrderStatus orderStatus = orderStatusMapper.selectByPrimaryKey(orderId);
+        orderStatus.setOrderId(orderId);
+        orderStatus.setOrderStatus(orderStatusNum);
+        orderStatus.setPayTime(new Date());
+        orderStatusMapper.updateByPrimaryKeySelective(orderStatus);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public OrderStatus queryOrderStatusByOrderId(String orderId) {
+        return orderStatusMapper.selectByPrimaryKey(orderId);
     }
 }

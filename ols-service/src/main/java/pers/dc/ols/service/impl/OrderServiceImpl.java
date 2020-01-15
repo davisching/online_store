@@ -159,7 +159,6 @@ public class OrderServiceImpl implements OrderService {
     @Transactional
     @Override
     public void closeOneOrder(OrderStatus orderStatus) {
-        System.out.println(orderStatus.getOrderId());
         orderStatus.setOrderStatus(OrderStatusEnum.CLOSE.type);
         orderStatus.setCloseTime(new Date());
         orderStatusMapper.updateByPrimaryKeySelective(orderStatus);

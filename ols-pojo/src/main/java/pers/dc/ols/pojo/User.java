@@ -2,6 +2,9 @@ package pers.dc.ols.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 public class User {
@@ -11,8 +14,12 @@ public class User {
 
     private String password;
 
+    @NotBlank
+    @Min(3)
     private String nickname;
 
+    @NotBlank
+    @Max(12)
     private String realname;
 
     private String face;

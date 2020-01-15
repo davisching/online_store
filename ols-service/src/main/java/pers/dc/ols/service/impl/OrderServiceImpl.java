@@ -21,7 +21,7 @@ import java.util.Date;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-    private final String RETURN_URL = "https://78b91c90.ngrok.io/ols/orders/notifyOrderPaid";
+    private final String RETURN_URL = "https://50082bf7.ngrok.io/ols/orders/notifyOrderPaid";
 
     @Resource private Sid sid;
 

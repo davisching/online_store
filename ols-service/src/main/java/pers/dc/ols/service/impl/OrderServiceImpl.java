@@ -14,9 +14,11 @@ import pers.dc.ols.pojo.vo.OrderVO;
 import pers.dc.ols.pojo.vo.ShopCartItemVO;
 import pers.dc.ols.service.ItemService;
 import pers.dc.ols.service.OrderService;
+import pers.dc.ols.utils.DateUtil;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -137,4 +139,31 @@ public class OrderServiceImpl implements OrderService {
     public OrderStatus queryOrderStatusByOrderId(String orderId) {
         return orderStatusMapper.selectByPrimaryKey(orderId);
     }
+
+    @Transactional
+    @Override
+    public void closeAllUnpaidOrder() {
+        OrderStatusExample example = new OrderStatusExample();
+        OrderStatusExample.Criteria criteria = example.createCriteria();
+        criteria.andOrderStatusEqualTo(OrderStatusEnum.WAIT_PAY.type);
+        List<OrderStatus> orderStatuses = orderStatusMapper.selectByExample(example);
+        Date now = new Date();
+        long closing_time = 1000*60*60*2;
+        for (OrderStatus orderStatus : orderStatuses) {
+            if (now.getTime() - orderStatus.getCreatedTime().getTime() >= closing_time) {
+               closeOneOrder(orderStatus);
+            }
+        }
+    }
+
+    @Transactional
+    @Override
+    public void closeOneOrder(OrderStatus orderStatus) {
+        System.out.println(orderStatus.getOrderId());
+        orderStatus.setOrderStatus(OrderStatusEnum.CLOSE.type);
+        orderStatus.setCloseTime(new Date());
+        orderStatusMapper.updateByPrimaryKeySelective(orderStatus);
+    }
+
+
 }

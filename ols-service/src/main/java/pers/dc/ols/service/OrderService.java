@@ -8,4 +8,6 @@ public interface OrderService {
     OrderVO createOrder(OrderCreateBO orderCreateBO);
     void updateOrderStatus(String orderId, Integer orderStatusNum);
     OrderStatus queryOrderStatusByOrderId(String orderId);
+    void closeAllUnpaidOrder();
+    void closeOneOrder(OrderStatus orderStatus);
 }

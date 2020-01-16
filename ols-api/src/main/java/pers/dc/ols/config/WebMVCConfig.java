@@ -19,6 +19,7 @@ public class WebMVCConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
+                .addResourceLocations("classpath:/META-INF/resources/")
                 .addResourceLocations("file:/Users/jasmine/Documents/img/");
     }
 }

@@ -164,5 +164,12 @@ public class OrderServiceImpl implements OrderService {
         orderStatusMapper.updateByPrimaryKeySelective(orderStatus);
     }
 
+    @Transactional
+    @Override
+    public void deleteOrder(String orderId) {
+        Order order = orderMapper.selectByPrimaryKey(orderId);
+        order.setIsDelete(YesOrNo.Yes.type);
+        orderMapper.updateByPrimaryKeySelective(order);
+    }
 
 }

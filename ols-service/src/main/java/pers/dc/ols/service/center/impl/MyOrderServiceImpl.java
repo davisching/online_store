@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import pers.dc.ols.mapper.CustomOrderMapper;
+import pers.dc.ols.mapper.OrderMapper;
+import pers.dc.ols.pojo.OrderExample;
 import pers.dc.ols.pojo.vo.MyOrdersVO;
 import pers.dc.ols.service.center.MyOrderService;
 import pers.dc.ols.service.common.PagingService;
@@ -19,11 +21,23 @@ public class MyOrderServiceImpl extends PagingService implements MyOrderService 
     @Resource
     private CustomOrderMapper customOrderMapper;
 
+    @Resource
+    private OrderMapper orderMapper;
+
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public PagedGridResult queryMyOrders(String userId, Integer orderStatus, Integer page, Integer pageSize) {
         PageHelper.startPage(page, pageSize);
         List<MyOrdersVO> orders = customOrderMapper.queryMyOrders(userId, orderStatus);
         return getResult(orders, page, pageSize);
+    }
+
+    @Override
+    public boolean userHasOrder(String userId, String orderId) {
+        OrderExample oe = new OrderExample();
+        OrderExample.Criteria criteria = oe.createCriteria();
+        criteria.andUserIdEqualTo(userId);
+        criteria.andIdEqualTo(orderId);
+        return orderMapper.selectByExample(oe) != null;
     }
 }

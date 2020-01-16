@@ -59,6 +59,12 @@ public class CenterUserController {
         if (file == null) return JSONResult.errorMsg("文件不能为空!");
         String filename = file.getOriginalFilename();
         String suffix = filename.substring(filename.lastIndexOf('.'));
+
+        if (!suffix.equalsIgnoreCase(".jpg")
+                && !suffix.equalsIgnoreCase(".jpeg")
+                && !suffix.equalsIgnoreCase(".png"))
+            return JSONResult.errorMsg("文件格式不支持");
+
         filename = "face-" + userId + suffix;
         File out = new File(getStoringLocation(filename));
         if (out.getParentFile() != null)

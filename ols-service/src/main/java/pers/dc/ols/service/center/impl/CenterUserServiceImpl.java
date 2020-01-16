@@ -32,6 +32,17 @@ public class CenterUserServiceImpl implements CenterUserService {
         return setParamNull(queryUserById(user.getId()));
     }
 
+    @Transactional
+    @Override
+    public User updateUserFace(String userId, String faceUrl) {
+        User user = userMapper.selectByPrimaryKey(userId);
+        user.setFace(faceUrl);
+        user.setUpdatedTime(new Date());
+        userMapper.updateByPrimaryKeySelective(user);
+        return queryUserById(userId);
+    }
+
+    // TODO 到时候用 redis 会改写这个方法
     private User setParamNull(User user) {
         user.setPassword(null);
         user.setMobile(null);

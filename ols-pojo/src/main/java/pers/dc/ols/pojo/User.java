@@ -17,7 +17,6 @@ public class User {
     @NotBlank
     private String nickname;
 
-    @NotBlank
     private String realname;
 
     private String face;

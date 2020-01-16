@@ -6,4 +6,5 @@ public interface CenterUserService {
 
     User queryUserById(String id);
     User updateUser(User user);
+    User updateUserFace(String userId, String faceUrl);
 }

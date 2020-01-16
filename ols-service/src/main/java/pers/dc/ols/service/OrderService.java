@@ -11,4 +11,5 @@ public interface OrderService {
     void closeAllUnpaidOrder();
     void closeOneOrder(OrderStatus orderStatus);
     void deleteOrder(String orderId);
+    void setOrderCommented(String orderId);
 }

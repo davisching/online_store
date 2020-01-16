@@ -7,6 +7,7 @@
         <result column="payMethod" property="payMethod"/>
         <result column="realPayAmount" property="realPayAmount"/>
         <result column="postAmount" property="postAmount"/>
+        <result column="isComment" property="isComment"/>
         <result column="orderStatus" property="orderStatus"/>
         <collection property="subOrderItemList" select="querySubOrderList"
                     column="orderId" ofType="pers.dc.ols.pojo.vo.SubMyOrderVO">
@@ -26,6 +27,7 @@
             o.pay_method as payMethod,
             o.real_pay_amount as realPayAmount,
             o.post_amount as postAmount,
+            o.is_comment as isComment,
             os.order_status as orderStatus
         from
             orders o

@@ -9,6 +9,7 @@ public class MyOrdersVO {
     private Integer payMethod;
     private Integer realPayAmount;
     private Integer postAmount;
+    private Integer isComment;
     private Integer orderStatus;
     private List<SubMyOrderVO> subOrderItemList;
 
@@ -66,5 +67,13 @@ public class MyOrdersVO {
 
     public void setSubOrderItemList(List<SubMyOrderVO> subOrderItemList) {
         this.subOrderItemList = subOrderItemList;
+    }
+
+    public Integer getIsComment() {
+        return isComment;
+    }
+
+    public void setIsComment(Integer isComment) {
+        this.isComment = isComment;
     }
 }

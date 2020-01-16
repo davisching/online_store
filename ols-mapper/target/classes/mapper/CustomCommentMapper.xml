@@ -24,4 +24,25 @@
           </if>
         ORDER BY c.created_time DESC
     </select>
+
+    <select id="doComments" parameterType="java.util.Map">
+        insert into
+            items_comments
+        (id, user_id, item_id, item_name, item_spec_id, sepc_name, comment_level, content, created_time, updated_time)
+            values
+            <foreach collection="commentList" item="item" index="idx" separator=",">
+                (
+                #{item.id},
+                #{userId},
+                #{item.itemId},
+                #{item.itemName},
+                #{item.itemSpecId},
+                #{item.itemSpecName},
+                #{item.commentLevel},
+                #{item.content},
+                now(),
+                now()
+                )
+            </foreach>
+    </select>
 </mapper>

@@ -130,7 +130,17 @@ public class OrderServiceImpl implements OrderService {
         OrderStatus orderStatus = orderStatusMapper.selectByPrimaryKey(orderId);
         orderStatus.setOrderId(orderId);
         orderStatus.setOrderStatus(orderStatusNum);
-        orderStatus.setPayTime(new Date());
+
+        if (orderStatusNum == OrderStatusEnum.WAIT_RECEIVE.type) {
+            orderStatus.setDeliverTime(new Date());
+        } else if (orderStatusNum == OrderStatusEnum.CLOSE.type) {
+            orderStatus.setCloseTime(new Date());
+        } else if (orderStatusNum == OrderStatusEnum.WAIT_DELIVER.type) {
+            orderStatus.setPayTime(new Date());
+        } else if (orderStatusNum == OrderStatusEnum.SUCCESS.type) {
+            orderStatus.setSuccessTime(new Date());
+        }
+
         orderStatusMapper.updateByPrimaryKeySelective(orderStatus);
     }
 
@@ -170,6 +180,17 @@ public class OrderServiceImpl implements OrderService {
         Order order = orderMapper.selectByPrimaryKey(orderId);
         order.setIsDelete(YesOrNo.Yes.type);
         orderMapper.updateByPrimaryKeySelective(order);
+    }
+
+    @Override
+    public void setOrderCommented(String orderId) {
+        Order order = orderMapper.selectByPrimaryKey(orderId);
+        order.setIsComment(YesOrNo.Yes.type);
+        orderMapper.updateByPrimaryKeySelective(order);
+
+        OrderStatus orderStatus = orderStatusMapper.selectByPrimaryKey(orderId);
+        orderStatus.setCommentTime(new Date());
+        orderStatusMapper.updateByPrimaryKeySelective(orderStatus);
     }
 
 }

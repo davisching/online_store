@@ -15,11 +15,9 @@ public class User {
     private String password;
 
     @NotBlank
-    @Min(3)
     private String nickname;
 
     @NotBlank
-    @Max(12)
     private String realname;
 
     private String face;

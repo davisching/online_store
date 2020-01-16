@@ -34,7 +34,7 @@ spring:
       connection-test-query: SELECT 1
   servlet:
     multipart:
-      max-file-size: 1KB
+      max-file-size: 1MB
 
 ############################################################
 #

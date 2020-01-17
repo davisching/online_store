@@ -7,4 +7,5 @@ public interface MyOrderService {
     PagedGridResult queryMyOrders(String userId, Integer orderStatus, Integer page, Integer pageSize);
     boolean userHasOrder(String userId, String orderId);
     OrderStatusCountsVO queryOrderStatusCounts(String userId);
+    PagedGridResult queryOrderTrends(String userId, Integer page, Integer pageSize);
 }

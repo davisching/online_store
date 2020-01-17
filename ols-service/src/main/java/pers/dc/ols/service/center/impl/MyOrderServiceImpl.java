@@ -9,6 +9,7 @@ import pers.dc.ols.mapper.OrderMapper;
 import pers.dc.ols.pojo.OrderExample;
 import pers.dc.ols.pojo.vo.MyOrdersVO;
 import pers.dc.ols.pojo.vo.center.OrderStatusCountsVO;
+import pers.dc.ols.pojo.vo.center.OrderTrendVO;
 import pers.dc.ols.pojo.vo.center.PreOrderStatusCountsVO;
 import pers.dc.ols.service.center.MyOrderService;
 import pers.dc.ols.service.common.PagingService;
@@ -51,4 +52,13 @@ public class MyOrderServiceImpl extends PagingService implements MyOrderService 
         result.initOrderStatusCountsVO(list);
         return result;
     }
+
+    @Override
+    public PagedGridResult queryOrderTrends(String userId, Integer page, Integer pageSize) {
+        PageHelper.startPage(page, pageSize);
+        List<OrderTrendVO> trends = customOrderMapper.queryOrderTrends(userId);
+        return getResult(trends, page, pageSize);
+    }
+
+
 }

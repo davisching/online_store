@@ -76,4 +76,23 @@
         group by
             os.order_status
     </select>
+    <select id="queryOrderTrends" resultType="pers.dc.ols.pojo.vo.center.OrderTrendVO">
+        select
+            os.pay_time as payTime,
+            os.deliver_time as deliverTime,
+            os.success_time as successTime,
+            os.order_status as orderStatus,
+            os.order_id as orderId
+        from
+            orders o,
+            order_status os
+        where
+            o.user_id = #{userId}
+                and
+            o.id = os.order_id
+                and
+            os.order_status in (20, 30, 40)
+        order by
+            os.created_time desc
+    </select>
 </mapper>

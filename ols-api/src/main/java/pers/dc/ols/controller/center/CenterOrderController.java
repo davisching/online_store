@@ -62,4 +62,10 @@ public class CenterOrderController {
     public JSONResult userId(String userId) {
         return JSONResult.ok(myOrderService.queryOrderStatusCounts(userId));
     }
+
+    @ApiOperation("用户中心-订单追踪")
+    @PostMapping("/trend")
+    public JSONResult trend(String userId, Integer page, Integer pageSize) {
+        return JSONResult.ok(myOrderService.queryOrderTrends(userId, page, pageSize));
+    }
 }

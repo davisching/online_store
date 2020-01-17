@@ -8,5 +8,4 @@ import java.util.List;
 public interface CustomOrderMapper {
     List<MyOrdersVO> queryMyOrders(String userId, Integer orderStatus);
     List<PreOrderStatusCountsVO> queryStatusCounts(String userId);
-    Integer getCommentedCount(String userId);
 }

@@ -18,6 +18,8 @@ public class OrderStatusCountsVO {
                 waitDeliverCounts = data.getCounts();
             else if (data.getOrderStatusNum() == OrderStatusEnum.WAIT_RECEIVE.type)
                 waitReceiveCounts = data.getCounts();
+            else if (data.getOrderStatusNum() == OrderStatusEnum.SUCCESS.type)
+                waitCommentCounts = data.getCounts();
         }
     }
 

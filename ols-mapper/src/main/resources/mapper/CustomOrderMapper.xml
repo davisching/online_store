@@ -65,29 +65,15 @@
             count(os.order_status) counts
         from
             orders
-                join
+        join
             order_status os
-            on
-                orders.id = os.order_id
+        on
+            orders.id = os.order_id
         where
             orders.user_id = #{userId}
+                and
+            orders.is_comment = 0
         group by
             os.order_status
-    </select>
-    <select id="getCommentedCount" resultType="int">
-        select
-            count(1)
-        from
-            orders
-                join
-            order_status os
-            on
-                orders.id = os.order_id
-        where
-            orders.user_id = '191213G1WMDYC6W0'
-          and
-            os.order_status = 40
-          and
-            orders.is_comment = 0
     </select>
 </mapper>

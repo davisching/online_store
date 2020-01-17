@@ -49,7 +49,6 @@ public class MyOrderServiceImpl extends PagingService implements MyOrderService 
         List<PreOrderStatusCountsVO> list = customOrderMapper.queryStatusCounts(userId);
         OrderStatusCountsVO result = new OrderStatusCountsVO();
         result.initOrderStatusCountsVO(list);
-        result.setWaitCommentCounts(customOrderMapper.getCommentedCount(userId));
         return result;
     }
 }

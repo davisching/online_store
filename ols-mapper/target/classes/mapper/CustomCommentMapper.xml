@@ -45,4 +45,37 @@
                 )
             </foreach>
     </select>
+    
+    <resultMap id="myComments" type="pers.dc.ols.pojo.vo.center.MyCommentVO">
+        <result column="commentId" property="commentId"/>
+        <result column="content" property="content"/>
+        <result column="createdTime" property="createdTime"/>
+        <result column="itemId" property="itemId"/>
+        <result column="itemName" property="itemName"/>
+        <result column="specName" property="specName"/>
+        <result column="itemImg" property="itemImg"/>
+    </resultMap>
+
+    <select id="queryMyComments" resultMap="myComments">
+        SELECT
+            comments.id as commentId,
+            comments.content as content,
+            comments.created_time as createdTime,
+            comments.item_id as itemId,
+            comments.item_name as itemName,
+            comments.sepc_name as specName,
+            img.url as itemImg
+        FROM
+            items_comments comments
+                JOIN
+            items_img img
+            ON
+                comments.item_id = img.item_id
+        where
+            comments.user_id = #{userId}
+          and
+            img.is_main = 1
+        order by
+            comments.created_time desc
+    </select>
 </mapper>

@@ -1,5 +1,6 @@
 package pers.dc.ols.service.center;
 
+import com.github.pagehelper.PageHelper;
 import org.n3r.idworker.Sid;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -14,7 +15,10 @@ import pers.dc.ols.pojo.OrderItem;
 import pers.dc.ols.pojo.OrderItemExample;
 import pers.dc.ols.pojo.OrderStatus;
 import pers.dc.ols.pojo.bo.center.OrderCommentsBO;
+import pers.dc.ols.pojo.vo.center.MyCommentVO;
 import pers.dc.ols.service.OrderService;
+import pers.dc.ols.service.common.PagingService;
+import pers.dc.ols.utils.PagedGridResult;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -23,7 +27,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class CenterCommentServiceImpl implements CenterCommentService {
+public class CenterCommentServiceImpl extends PagingService implements CenterCommentService {
 
     @Resource private OrderItemMapper orderItemMapper;
     @Resource private OrderMapper orderMapper;
@@ -53,5 +57,13 @@ public class CenterCommentServiceImpl implements CenterCommentService {
         customCommentMapper.doComments(map);
 
         orderService.setOrderCommented(orderId);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public PagedGridResult queryMyComments(String userId, Integer page, Integer pageSize) {
+        PageHelper.startPage(page, pageSize);
+        List<MyCommentVO> comments = customCommentMapper.queryMyComments(userId);
+        return getResult(comments, page, pageSize);
     }
 }

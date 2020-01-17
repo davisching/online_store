@@ -42,4 +42,10 @@ public class CenterCommentController {
 
         return JSONResult.ok();
     }
+
+    @ApiOperation("查询评价")
+    @PostMapping("/query")
+    public JSONResult query(String userId, Integer page, Integer pageSize) {
+        return JSONResult.ok(centerCommentService.queryMyComments(userId, page, pageSize));
+    }
 }

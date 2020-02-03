@@ -11,11 +11,20 @@
 
     <artifactId>ols-api</artifactId>
 
+    <packaging>war</packaging>
+
     <dependencies>
+        <dependency>
+            <groupId>pers.dc</groupId>
+            <artifactId>ols-common</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>pers.dc</groupId>
             <artifactId>ols-service</artifactId>
             <version>0.0.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

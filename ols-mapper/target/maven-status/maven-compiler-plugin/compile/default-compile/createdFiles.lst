@@ -1,0 +1,17 @@
+pers/dc/ols/mapper/ItemMapper.class
+pers/dc/ols/mapper/CarouselMapper.class
+pers/dc/ols/mapper/ItemParamMapper.class
+pers/dc/ols/mapper/OrderStatusMapper.class
+pers/dc/ols/mapper/CategoryMapperCustom.class
+pers/dc/ols/mapper/CustomCommentMapper.class
+pers/dc/ols/mapper/ItemImgMapper.class
+pers/dc/ols/mapper/ItemCommentMapper.class
+pers/dc/ols/mapper/CustomOrderMapper.class
+pers/dc/ols/mapper/ItemSearchMapper.class
+pers/dc/ols/mapper/CategoryMapper.class
+pers/dc/ols/mapper/UserMapper.class
+pers/dc/ols/mapper/OrderItemMapper.class
+pers/dc/ols/mapper/UserAddressMapper.class
+pers/dc/ols/mapper/OrderMapper.class
+pers/dc/ols/mapper/ItemSpecMapper.class
+pers/dc/ols/mapper/ItemMapperCustom.class

@@ -8,8 +8,8 @@ server:
   tomcat:
     uri-encoding: UTF-8
   max-http-header-size: 80KB
-  servlet:
-    context-path: /ols/
+#  servlet:
+#    context-path: /ols/
 
 ############################################################
 #
@@ -18,7 +18,7 @@ server:
 ############################################################
 spring:
   profiles:
-    active: dev
+    active: prod
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver

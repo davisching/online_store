@@ -1,80 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE generatorConfiguration
-        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
-        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-<generatorConfiguration>
-    <context id="my-blog-generator-config" targetRuntime="MyBatis3">
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE generatorConfiguration-->
+<!--        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"-->
+<!--        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">-->
+<!--<generatorConfiguration>-->
+<!--    <context id="my-blog-generator-config" targetRuntime="MyBatis3">-->
 
-        <property name="javaFileEncoding" value="utf-8"/>
+<!--        <property name="javaFileEncoding" value="utf-8"/>-->
 
-        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+<!--        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>-->
 
-        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+<!--        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>-->
 
-        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+<!--        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>-->
 
-        <commentGenerator>
-            <property name="suppressDate" value="true"/>
-            <property name="suppressAllComments" value="true"/>
-        </commentGenerator>
+<!--        <commentGenerator>-->
+<!--            <property name="suppressDate" value="true"/>-->
+<!--            <property name="suppressAllComments" value="true"/>-->
+<!--        </commentGenerator>-->
 
-        <jdbcConnection
-                driverClass="com.mysql.cj.jdbc.Driver"
-                connectionURL="jdbc:mysql://localhost:3306/ols"
-                userId="root"
-                password="Aa941211">
-            <property name="nullCatalogMeansCurrent" value="true"/>
-        </jdbcConnection>
+<!--        <jdbcConnection-->
+<!--                driverClass="com.mysql.cj.jdbc.Driver"-->
+<!--                connectionURL="jdbc:mysql://localhost:3306/ols"-->
+<!--                userId="root"-->
+<!--                password="Aa941211">-->
+<!--            <property name="nullCatalogMeansCurrent" value="true"/>-->
+<!--        </jdbcConnection>-->
 
-        <javaTypeResolver>
-            <property name="forceBigDecimals" value="false"/>
-        </javaTypeResolver>
+<!--        <javaTypeResolver>-->
+<!--            <property name="forceBigDecimals" value="false"/>-->
+<!--        </javaTypeResolver>-->
 
-        <javaModelGenerator targetPackage="pers.dc.ols.pojo" targetProject="ols-pojo/src/main/java">
-            <property name="enableSubPackages" value="true"/>
-            <property name="trimStrings" value="true"/>
-        </javaModelGenerator>
+<!--        <javaModelGenerator targetPackage="pers.dc.ols.pojo" targetProject="ols-pojo/src/main/java">-->
+<!--            <property name="enableSubPackages" value="true"/>-->
+<!--            <property name="trimStrings" value="true"/>-->
+<!--        </javaModelGenerator>-->
 
-        <sqlMapGenerator targetPackage="mapper" targetProject="ols-mapper/src/main/resources">
-            <property name="enableSubPackages" value="true"/>
-        </sqlMapGenerator>
+<!--        <sqlMapGenerator targetPackage="mapper" targetProject="ols-mapper/src/main/resources">-->
+<!--            <property name="enableSubPackages" value="true"/>-->
+<!--        </sqlMapGenerator>-->
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="pers.dc.ols.mapper"
-                             targetProject="ols-mapper/src/main/java">
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+<!--        <javaClientGenerator type="XMLMAPPER" targetPackage="pers.dc.ols.mapper"-->
+<!--                             targetProject="ols-mapper/src/main/java">-->
+<!--            <property name="enableSubPackages" value="true"/>-->
+<!--        </javaClientGenerator>-->
 
-<!--        <table tableName="test" domainObjectName="Test"-->
-<!--               enableCountByExample="false"-->
-<!--               enableUpdateByExample="false"-->
-<!--               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
-<!--        </table>-->
+<!--&lt;!&ndash;        <table tableName="test" domainObjectName="Test"&ndash;&gt;-->
+<!--&lt;!&ndash;               enableCountByExample="false"&ndash;&gt;-->
+<!--&lt;!&ndash;               enableUpdateByExample="false"&ndash;&gt;-->
+<!--&lt;!&ndash;               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">&ndash;&gt;-->
+<!--&lt;!&ndash;        </table>&ndash;&gt;-->
 
-<!--        | carousel         |-->
-<!--        | category         |-->
-<!--        | items            |-->
-<!--        | items_comments   |-->
-<!--        | items_img        |-->
-<!--        | items_param      |-->
-<!--        | items_spec       |-->
-<!--        | order_items      |-->
-<!--        | order_status     |-->
-<!--        | orders           |-->
-<!--        | user_address     |-->
-<!--        | users-->
+<!--&lt;!&ndash;        | carousel         |&ndash;&gt;-->
+<!--&lt;!&ndash;        | category         |&ndash;&gt;-->
+<!--&lt;!&ndash;        | items            |&ndash;&gt;-->
+<!--&lt;!&ndash;        | items_comments   |&ndash;&gt;-->
+<!--&lt;!&ndash;        | items_img        |&ndash;&gt;-->
+<!--&lt;!&ndash;        | items_param      |&ndash;&gt;-->
+<!--&lt;!&ndash;        | items_spec       |&ndash;&gt;-->
+<!--&lt;!&ndash;        | order_items      |&ndash;&gt;-->
+<!--&lt;!&ndash;        | order_status     |&ndash;&gt;-->
+<!--&lt;!&ndash;        | orders           |&ndash;&gt;-->
+<!--&lt;!&ndash;        | user_address     |&ndash;&gt;-->
+<!--&lt;!&ndash;        | users&ndash;&gt;-->
 
-        <table tableName="carousel" domainObjectName="Carousel"/>
-        <table tableName="category" domainObjectName="Category"/>
-        <table tableName="items" domainObjectName="Item"/>
-        <table tableName="items_comments" domainObjectName="ItemComment"/>
-        <table tableName="items_img" domainObjectName="ItemImg"/>
-        <table tableName="items_param" domainObjectName="ItemParam"/>
-        <table tableName="items_spec" domainObjectName="ItemSpec"/>
-        <table tableName="order_items" domainObjectName="OrderItem"/>
-        <table tableName="order_status" domainObjectName="OrderStatus"/>
-        <table tableName="orders" domainObjectName="Order"/>
-        <table tableName="user_address" domainObjectName="UserAddress"/>
-        <table tableName="users" domainObjectName="User"/>
+<!--        <table tableName="carousel" domainObjectName="Carousel"/>-->
+<!--        <table tableName="category" domainObjectName="Category"/>-->
+<!--        <table tableName="items" domainObjectName="Item"/>-->
+<!--        <table tableName="items_comments" domainObjectName="ItemComment"/>-->
+<!--        <table tableName="items_img" domainObjectName="ItemImg"/>-->
+<!--        <table tableName="items_param" domainObjectName="ItemParam"/>-->
+<!--        <table tableName="items_spec" domainObjectName="ItemSpec"/>-->
+<!--        <table tableName="order_items" domainObjectName="OrderItem"/>-->
+<!--        <table tableName="order_status" domainObjectName="OrderStatus"/>-->
+<!--        <table tableName="orders" domainObjectName="Order"/>-->
+<!--        <table tableName="user_address" domainObjectName="UserAddress"/>-->
+<!--        <table tableName="users" domainObjectName="User"/>-->
 
-    </context>
-</generatorConfiguration>
+<!--    </context>-->
+<!--</generatorConfiguration>-->

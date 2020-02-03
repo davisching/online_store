@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "main",
+      "type": "pers.dc.ols.resources.DevProperties",
+      "sourceType": "pers.dc.ols.resources.DevProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "main.face-storing-location",
+      "type": "java.lang.String",
+      "sourceType": "pers.dc.ols.resources.DevProperties"
+    }
+  ],
+  "hints": []
+}

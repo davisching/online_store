@@ -23,7 +23,7 @@ import java.util.List;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-    private final String RETURN_URL = "https://50082bf7.ngrok.io/ols/orders/notifyOrderPaid";
+    private final String RETURN_URL = "http://172.17.49.24:8088/ols/orders/notifyOrderPaid";
 
     @Resource private Sid sid;
 

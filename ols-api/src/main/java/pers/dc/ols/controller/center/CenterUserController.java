@@ -74,7 +74,7 @@ public class CenterUserController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String newUrl = "http://localhost:8088/ols/face/"+filename
+        String newUrl = "http://172.17.49.24:8088/ols/face/"+filename
                 +"?t="+ DateUtil.getCurrentDateString(DateUtil.DATE_PATTERN);
         User user = centerUserService.updateUserFace(userId, newUrl);
         updateUserCookie(user, request, response);

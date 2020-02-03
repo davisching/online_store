@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "main")
-@PropertySource("classpath:dev.properties")
+@PropertySource("classpath:file-prod.properties")
 public class DevProperties {
 
     private String faceStoringLocation;

@@ -4,7 +4,7 @@
 #
 ############################################################
 server:
-  port: 8088
+#  port: 8088
   tomcat:
     uri-encoding: UTF-8
   max-http-header-size: 80KB
@@ -17,12 +17,14 @@ server:
 #
 ############################################################
 spring:
+  profiles:
+    active: dev
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ols?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8
-    username: root
-    password: Aa941211
+#    url: jdbc:mysql://localhost:3306/ols?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8
+#    username: root
+#    password: Aa941211
     hikari:
       connection-timeout: 30000       # 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 默认:30秒
       minimum-idle: 5                 # 最小连接数
@@ -44,8 +46,6 @@ spring:
 mybatis:
   type-aliases-package: pers.dc.ols.pojo
   mapper-locations: classpath:mapper/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 logging:
   config: classpath:log4j2.xml
